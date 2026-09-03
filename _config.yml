@@ -1,5 +1,5 @@
-remote_theme: pages-themes/architect@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
-title: Kathryn Kong's Profile
-description: Welcome to my academic journey pursuing a PhD in Texts and Technology at the University of Central Florida!
+title: Yingzi "Kathryn" Kong
+description: Digital Media Researcher · Educator · Interactive Media Practitioner

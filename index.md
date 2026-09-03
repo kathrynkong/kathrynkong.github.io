@@ -1,35 +1,74 @@
 ---
 layout: default
-title: Kathryn Kong - Academic Portfolio
+title: Home
 ---
 
-# Yingzi Kong
-## PhD Student in T&T at UCF
+<p class="hero-intro">I research, teach, and design at the intersection of digital media, games, artificial intelligence, interactive storytelling, and learning.</p>
 
-![Featured Image](/assets/florida.jpg)
+## Featured Work
 
-## Contents
-- [About me](#about-me)
-- [Research Interests](#research-interests)
-- [My Social Media Presence](#my-social-media-presence)
-- [Contact](#contact)
+<div class="card-grid">
 
-### About me
+  <a class="card" href="/portfolio/#mato-anomalies">
+    <div class="card-image placeholder">
+      <span class="ph-icon">🖼️</span>
+      <span class="ph-caption">Image coming soon: Mato Anomalies key art</span>
+    </div>
+    <span class="card-tag">Localization</span>
+    <h3>Professional Game Localization</h3>
+    <p>Mato Anomalies — English–Chinese localization for a narrative-driven RPG.</p>
+  </a>
 
-Embarking on my PhD journey in the T&T program, I merge my background in engineering and translation studies with my passion for gaming narratives, computer-assisted translation, and language education. My experience as a translator and game localization specialist fuels my research in game narratives, digital storytelling, game-based language pedagogy, and computer-assisted language learning.
+  <a class="card" href="/portfolio/#game-based-learning-ux-research">
+    <div class="card-image placeholder">
+      <span class="ph-icon">🖼️</span>
+      <span class="ph-caption">Image coming soon: ELLE screenshot</span>
+    </div>
+    <span class="card-tag">Research</span>
+    <h3>Game-Based Learning &amp; UX Research</h3>
+    <p>ELLE — The EndLess Learner: designing and studying game-based, AI-assisted language learning.</p>
+  </a>
 
-### Research Interests
+  <a class="card" href="/portfolio/#interactive-game-localization">
+    <div class="card-image placeholder">
+      <span class="ph-icon">🖼️</span>
+      <span class="ph-caption">Image coming soon: Twine screenshot</span>
+    </div>
+    <span class="card-tag">Interactive Narrative</span>
+    <h3>Interactive Game Localization</h3>
+    <p>Twine-based interactive narrative and localization experiments.</p>
+  </a>
 
-- Video Game Narratives and Digital Storytelling, Video Game Localization  
-- Machine Translation, Computer-assisted Language Learning (CALL), and Game-based Learning  
-- Hate Speech on Social Media  
+  <a class="card" href="/portfolio/#vr-immersive-learning">
+    <div class="card-image placeholder">
+      <span class="ph-icon">🖼️</span>
+      <span class="ph-caption">Image coming soon: VR/XR image</span>
+    </div>
+    <span class="card-tag">Immersive Media</span>
+    <h3>VR &amp; Immersive Learning</h3>
+    <p>Exploring virtual and extended reality for language and narrative learning.</p>
+  </a>
 
-### My Social Media Presence
+  <a class="card" href="/portfolio/#ai-assisted-game-design">
+    <div class="card-image placeholder">
+      <span class="ph-icon">🖼️</span>
+      <span class="ph-caption">Image coming soon: AI workflow / prototype</span>
+    </div>
+    <span class="card-tag">AI &amp; Design</span>
+    <h3>AI-Assisted Game Design</h3>
+    <p>Using generative AI tools in game and learning-content design workflows.</p>
+  </a>
 
-- [Bluesky](https://bsky.app/profile/yingzi.bsky.social)  
-- [LinkedIn](https://www.linkedin.com/in/kathryn-kong-531537159/)  
-- [GitHub](https://github.com/kathrynkong)
+  <a class="card" href="/portfolio/#teaching-digital-media">
+    <div class="card-image placeholder">
+      <span class="ph-icon">🖼️</span>
+      <span class="ph-caption">Image coming soon: course / lecture visual</span>
+    </div>
+    <span class="card-tag">Teaching</span>
+    <h3>Teaching Digital Media</h3>
+    <p>Course design and classroom artifacts from teaching digital media and language.</p>
+  </a>
 
-### Contact
+</div>
 
-- Email: yingzi.kong@ucf.edu
+<p class="section-cta"><a href="/portfolio/">View the full portfolio →</a></p>
