@@ -1,70 +1,206 @@
 ---
 ---
 
-@import "jekyll-theme-architect";
+// Custom palette for a digital-media / interactive-research portfolio,
+// overriding jekyll-theme-cayman's defaults (must be set before the @import).
+$header-bg-color: #4338ca;
+$header-bg-color-secondary: #7c3aed;
+$section-headings-color: #4338ca;
+$body-link-color: #4f46e5;
 
-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #666;
-    background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
+@import "jekyll-theme-cayman";
+
+// ---------------------------------------------------------------------
+// Primary nav (added to the theme's page-header)
+// ---------------------------------------------------------------------
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
 }
 
-header {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-    background: url('{{ 'assets/banner.png' | relative_url }}') no-repeat center center fixed;
-    background-size: cover;
-    border-bottom: solid 1px #275da1;
+.site-nav a {
+  display: inline-block;
+  padding: 0.45rem 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
 }
 
-header p {
-    color: #9370DB; 
-    font-size: 1.1em;
-    font-style: italic;
+.site-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
 }
 
-header h1 {
-    color: #6a5acd;
+.site-nav a.active {
+  color: $header-bg-color;
+  background-color: #fff;
+  border-color: #fff;
+  font-weight: 600;
 }
 
-header a.button,
-aside a.button {
-    background: #add8e6;
+// ---------------------------------------------------------------------
+// Homepage hero intro line
+// ---------------------------------------------------------------------
+.hero-intro {
+  max-width: 42rem;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-#main-content h1:before,
-#main-content h2:before,
-#main-content h3:before,
-#main-content h4:before,
-#main-content h5:before,
-#main-content h6:before {
-    color: #6a5acd;
-    content: "-";
+.section-cta {
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
-#main-content h3,
-#main-content h4,
-#main-content h6 {
-    color: #6a5acd;
+// ---------------------------------------------------------------------
+// Card grid (used on Home and Portfolio)
+// ---------------------------------------------------------------------
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
 }
 
-nav a::before {
-    content: "🐾 ";
+.card {
+  display: block;
+  overflow: hidden;
+  color: $body-text-color;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 
-#breadcrumb {
-    margin-bottom: 20px;
-    font-size: 0.9em;
+.card:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(76, 29, 149, 0.15);
 }
 
-#sidebar .button {
-    padding: 5px 10px;
-    font-size: 1.2em;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.card h3 {
+  margin: 0.9rem 1rem 0.3rem;
+  font-size: 1.05rem;
+  color: $section-headings-color;
+}
+
+.card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.92rem;
+}
+
+.card-tag {
+  display: inline-block;
+  margin: 0.9rem 1rem 0;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $header-bg-color-secondary;
+  background: rgba(124, 58, 237, 0.08);
+  border-radius: 999px;
+}
+
+// Placeholder image blocks: images will be supplied later and swapped in.
+.card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.card-image.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  color: $header-bg-color-secondary;
+  background: repeating-linear-gradient(45deg, #f4f1fd, #f4f1fd 10px, #ece5fb 10px, #ece5fb 20px);
+  border-bottom: 1px dashed rgba(124, 58, 237, 0.4);
+}
+
+.card-image.placeholder .ph-icon {
+  margin-bottom: 0.3rem;
+  font-size: 1.6rem;
+}
+
+.card-image.placeholder .ph-caption {
+  font-size: 0.75rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+// ---------------------------------------------------------------------
+// Portfolio case studies
+// ---------------------------------------------------------------------
+.case-study {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $hr-border-color;
+}
+
+.case-study:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.case-study .card-image.placeholder {
+  aspect-ratio: 21 / 9;
+  margin-bottom: 1rem;
+  border: 1px dashed rgba(124, 58, 237, 0.4);
+  border-radius: 0.5rem;
+}
+
+.case-meta {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+  color: $blockquote-text-color;
+}
+
+.case-meta strong {
+  color: $body-text-color;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-radius: 999px;
+}
+
+.status-badge.live {
+  color: #065f46;
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.status-badge.coming-soon {
+  color: #92400e;
+  background: rgba(245, 158, 11, 0.14);
+}
+
+// Editable prompts for content the site owner still needs to fill in —
+// visually distinct so they're easy to find and replace later.
+.fill-me {
+  display: block;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0 1rem;
+  font-style: italic;
+  color: #6d28d9;
+  background: rgba(124, 58, 237, 0.06);
+  border-left: 3px solid rgba(124, 58, 237, 0.4);
+  border-radius: 0 0.3rem 0.3rem 0;
 }
