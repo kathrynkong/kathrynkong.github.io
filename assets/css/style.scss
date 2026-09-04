@@ -1,6 +1,8 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&display=swap');
+
 // Custom palette for a digital-media / interactive-research portfolio,
 // overriding jekyll-theme-cayman's defaults (must be set before the @import).
 $header-bg-color: #4338ca;
@@ -9,6 +11,28 @@ $section-headings-color: #4338ca;
 $body-link-color: #4f46e5;
 
 @import "jekyll-theme-cayman";
+
+// ---------------------------------------------------------------------
+// Typography: a serif display face for headings against the sans body,
+// for a more editorial/designed feel than the theme default.
+// ---------------------------------------------------------------------
+$display-font: "Fraunces", Georgia, "Times New Roman", serif;
+
+.project-name,
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.card h3 {
+  font-family: $display-font;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.project-tagline {
+  font-family: $display-font;
+  font-style: italic;
+  font-weight: 400;
+}
 
 // ---------------------------------------------------------------------
 // Primary nav (added to the theme's page-header)
@@ -78,6 +102,34 @@ $body-link-color: #4f46e5;
   margin-top: 1.5rem;
 }
 
+.section-cta a {
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  color: #fff;
+  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.section-cta a:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(76, 29, 149, 0.28);
+}
+
+// Accent underline beneath a page's leading heading.
+.main-content > h1:first-child::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 4px;
+  margin-top: 0.7rem;
+  background-image: linear-gradient(90deg, $header-bg-color-secondary, $header-bg-color);
+  border-radius: 999px;
+}
+
 // ---------------------------------------------------------------------
 // Card grid (used on Home and Portfolio)
 // ---------------------------------------------------------------------
@@ -95,15 +147,23 @@ $body-link-color: #4f46e5;
   text-decoration: none;
   background: #fff;
   border: 1px solid $border-color;
+  border-top: 4px solid $header-bg-color-secondary;
   border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(76, 29, 149, 0.06);
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .card:hover {
   text-decoration: none;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(76, 29, 149, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(76, 29, 149, 0.18);
 }
+
+.card--research { border-top-color: #2563eb; }
+.card--narrative { border-top-color: #db2777; }
+.card--immersive { border-top-color: #0d9488; }
+.card--ai { border-top-color: #ea580c; }
+.card--teaching { border-top-color: #b45309; }
 
 .card h3 {
   margin: 0.9rem 1rem 0.3rem;
@@ -128,6 +188,12 @@ $body-link-color: #4f46e5;
   border-radius: 999px;
 }
 
+.card-tag--research { color: #2563eb; background: rgba(37, 99, 235, 0.08); }
+.card-tag--narrative { color: #db2777; background: rgba(219, 39, 119, 0.08); }
+.card-tag--immersive { color: #0d9488; background: rgba(13, 148, 136, 0.08); }
+.card-tag--ai { color: #ea580c; background: rgba(234, 88, 12, 0.08); }
+.card-tag--teaching { color: #b45309; background: rgba(180, 83, 9, 0.08); }
+
 // Placeholder image blocks: images will be supplied later and swapped in.
 .card-image {
   width: 100%;
@@ -142,8 +208,8 @@ $body-link-color: #4f46e5;
   padding: 1rem;
   text-align: center;
   color: $header-bg-color-secondary;
-  background: repeating-linear-gradient(45deg, #f4f1fd, #f4f1fd 10px, #ece5fb 10px, #ece5fb 20px);
-  border-bottom: 1px dashed rgba(124, 58, 237, 0.4);
+  background-image: linear-gradient(160deg, #f5f3ff 0%, #ece5fb 100%);
+  border-bottom: 1px dashed rgba(124, 58, 237, 0.35);
 }
 
 .card-image.placeholder .ph-icon {
@@ -175,8 +241,12 @@ $body-link-color: #4f46e5;
 .case-study .card-image.placeholder {
   aspect-ratio: 21 / 9;
   margin-bottom: 1rem;
-  border: 1px dashed rgba(124, 58, 237, 0.4);
+  border: 1px dashed rgba(124, 58, 237, 0.35);
   border-radius: 0.5rem;
+}
+
+.site-footer {
+  text-align: center;
 }
 
 .case-meta {
