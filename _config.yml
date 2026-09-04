@@ -2,5 +2,5 @@ remote_theme: pages-themes/cayman@v0.2.0
 baseurl: "/my_cv"
 plugins:
 - jekyll-remote-theme
-title: Yingzi "Kathryn" Kong
+title: Kathryn/Yingzi Kong
 description: Digital Media Researcher · Educator · Interactive Media Practitioner
