@@ -164,6 +164,7 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
 .card--immersive { border-top-color: #0d9488; }
 .card--ai { border-top-color: #ea580c; }
 .card--teaching { border-top-color: #b45309; }
+.card--creative { border-top-color: #059669; }
 
 .card h3 {
   margin: 0.9rem 1rem 0.3rem;
@@ -193,6 +194,7 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
 .card-tag--immersive { color: #0d9488; background: rgba(13, 148, 136, 0.08); }
 .card-tag--ai { color: #ea580c; background: rgba(234, 88, 12, 0.08); }
 .card-tag--teaching { color: #b45309; background: rgba(180, 83, 9, 0.08); }
+.card-tag--creative { color: #059669; background: rgba(5, 150, 105, 0.08); }
 
 // Placeholder image blocks: images will be supplied later and swapped in.
 .card-image {
@@ -290,4 +292,86 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
   background: rgba(124, 58, 237, 0.06);
   border-left: 3px solid rgba(124, 58, 237, 0.4);
   border-radius: 0 0.3rem 0.3rem 0;
+}
+
+// ---------------------------------------------------------------------
+// Cat theme: paw-print bullets (subtle, not on nav/card markup)
+// ---------------------------------------------------------------------
+.main-content ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.main-content ul li {
+  position: relative;
+  padding-left: 1.6em;
+}
+
+.main-content ul li::before {
+  content: "🐾";
+  position: absolute;
+  top: 0.05em;
+  left: 0;
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+// ---------------------------------------------------------------------
+// Desktop cat companion (assets/js/desktop-cat.js)
+// ---------------------------------------------------------------------
+.desktop-cat {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.desktop-cat-sprite {
+  display: inline-block;
+  font-size: 2.2rem;
+  line-height: 1;
+  transform-origin: center bottom;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+.desktop-cat.walking .desktop-cat-sprite {
+  animation: cat-bob 0.5s ease-in-out infinite;
+}
+
+.desktop-cat.sitting .desktop-cat-sprite {
+  transform: rotate(0deg);
+}
+
+@keyframes cat-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .desktop-cat.walking .desktop-cat-sprite {
+    animation: none;
+  }
+}
+
+.cat-toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 41;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.78rem;
+  color: $header-bg-color;
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.cat-toggle:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transform: translateY(-1px);
 }
