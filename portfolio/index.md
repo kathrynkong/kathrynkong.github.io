@@ -66,9 +66,17 @@ Game localization is not word-for-word translation — it's re-authoring narrati
   <span class="ph-caption">Image coming soon: ELLE / AnimELLE interface screenshot</span>
 </div>
 
-<span class="fill-me">Add a short description of ELLE from the UX/game-design angle: what the tool looks like, what you specifically designed or evaluated, and what makes it a "game-based" learning experience rather than a traditional app.</span>
+Evaluating game-based and immersive language-learning experiences through UX research.
 
-See the [Research](/research/) page for the academic framing of this project, related publications, and presentations.
+**My Role**
+
+- Moderated laboratory studies
+- Conducted and assisted with user interviews
+- Analyzed surveys
+- Observed VR and desktop gameplay sessions
+- Translated user behavior into research and design insights
+
+See the [Research]({{ "/research/" | relative_url }}) page for the academic framing of this project, related publications, and presentations.
 
 </div>
 
@@ -128,6 +136,6 @@ See the [Research](/research/) page for the academic framing of this project, re
   <span class="ph-caption">Image coming soon: course / lecture visual</span>
 </div>
 
-<span class="fill-me">Add course materials, syllabi excerpts, or classroom artifacts from teaching digital media. See the <a href="/teaching/">Teaching</a> page for course history.</span>
+<span class="fill-me">Add course materials, syllabi excerpts, or classroom artifacts from teaching digital media. See the <a href="{{ "/teaching/" | relative_url }}">Teaching</a> page for course history.</span>
 
 </div>
