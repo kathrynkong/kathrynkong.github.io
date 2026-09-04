@@ -142,26 +142,3 @@ See the [Research]({{ "/research/" | relative_url }}) page for the academic fram
 <span class="fill-me">Add course materials, syllabi excerpts, or classroom artifacts from teaching digital media. See the <a href="{{ "/teaching/" | relative_url }}">Teaching</a> page for course history.</span>
 
 </div>
-
-<div class="case-study" id="desktop-cat-companion" markdown="1">
-
-<span class="status-badge live">Live</span>
-
-## Desktop Cat Companion
-{: #desktop-cat-companion-heading}
-
-<div class="case-meta">
-<strong>Type:</strong> Personal creative-coding project<br>
-<strong>Stack:</strong> Vanilla JavaScript, CSS animation<br>
-<strong>Status:</strong> Live on this site — look at the bottom of your screen
-</div>
-
-A small walking cat, built as a lightweight, dependency-free front-end interaction demo and running live in the corner of every page on this site. A playful nod to my own cats, and a hands-on demonstration of interactive/UI skills alongside the research and localization work above — toggle it with the paw button in the bottom-right corner.
-
-**How it works**
-
-- Vanilla JavaScript walks the cat toward randomized positions along the bottom of the viewport, pausing and re-orienting between walks
-- CSS keyframes drive the walk-cycle bob; direction changes flip the sprite
-- Respects `prefers-reduced-motion`, and the show/hide toggle is remembered per visitor
-
-</div>
