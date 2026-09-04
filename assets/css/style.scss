@@ -28,23 +28,10 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
   letter-spacing: -0.01em;
 }
 
-.identity-markers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.6rem;
-  margin: 0 0 1.5rem;
-}
-
-.identity-marker {
-  padding: 0.4rem 1rem;
+.project-tagline {
   font-family: $display-font;
   font-style: italic;
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.92);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 999px;
+  font-weight: 400;
 }
 
 // ---------------------------------------------------------------------
@@ -95,8 +82,103 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
   background-size: cover;
 }
 
-.project-name {
+.project-name,
+.project-tagline {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+// ---------------------------------------------------------------------
+// Header entrance: name -> tagline -> nav fade in with a slight
+// upward reveal, staggered via inline animation-delay in the layout.
+// ---------------------------------------------------------------------
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-fade {
+  opacity: 0;
+  animation: hero-fade-in 0.6s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-fade {
+    opacity: 1;
+    animation: none;
+    transform: none;
+  }
+}
+
+// ---------------------------------------------------------------------
+// Cat-paw cursor
+// ---------------------------------------------------------------------
+html {
+  cursor: url('{{ "/assets/paw-cursor.svg" | relative_url }}') 16 16, auto;
+}
+
+a,
+button,
+.card,
+.pathway-node,
+.keyword {
+  cursor: url('{{ "/assets/paw-cursor.svg" | relative_url }}') 16 16, pointer;
+}
+
+// ---------------------------------------------------------------------
+// Paw easter egg (header)
+// ---------------------------------------------------------------------
+.paw-easter-egg {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.3rem 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  opacity: 0.7;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.paw-easter-egg:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.page-header {
+  position: relative;
+}
+
+.paw-easter-egg-message {
+  position: absolute;
+  top: 2.6rem;
+  right: 0.75rem;
+  max-width: 14rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.78rem;
+  color: $header-bg-color;
+  text-align: right;
+  background: #fff;
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.paw-easter-egg-message.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 // ---------------------------------------------------------------------
@@ -107,6 +189,19 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
   margin: 0 auto 2rem;
   font-size: 1.2rem;
   text-align: center;
+}
+
+.keyword {
+  padding: 0 0.15em;
+  color: $header-bg-color-secondary;
+  font-weight: 600;
+  border-radius: 0.2em;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.keyword:hover {
+  color: $header-bg-color;
+  background: rgba(124, 58, 237, 0.12);
 }
 
 .section-cta {
@@ -185,8 +280,39 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
 }
 
 .card p {
-  margin: 0 1rem 1rem;
+  margin: 0 1rem 0.5rem;
   font-size: 0.92rem;
+}
+
+.card-hover-info {
+  max-height: 0;
+  margin: 0 1rem;
+  overflow: hidden;
+  font-size: 0.85rem;
+  color: $header-bg-color-secondary;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.25s, transform 0.25s, max-height 0.25s, margin 0.25s;
+}
+
+.card-hover-info .view-case-study {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-weight: 600;
+}
+
+.card:hover .card-hover-info,
+.card:focus-visible .card-hover-info {
+  max-height: 6rem;
+  margin: 0 1rem 1rem;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-hover-info {
+    transition: none;
+  }
 }
 
 .card-tag {
@@ -212,6 +338,19 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
 .card-image {
   width: 100%;
   aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.03);
 }
 
 .card-image.placeholder {
@@ -224,6 +363,23 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
   color: $header-bg-color-secondary;
   background-image: linear-gradient(160deg, #f5f3ff 0%, #ece5fb 100%);
   border-bottom: 1px dashed rgba(124, 58, 237, 0.35);
+  transition: transform 0.35s ease;
+}
+
+.card:hover .card-image.placeholder {
+  transform: scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-image img,
+  .card-image.placeholder {
+    transition: none;
+  }
+
+  .card:hover .card-image img,
+  .card:hover .card-image.placeholder {
+    transform: none;
+  }
 }
 
 .card-image.placeholder .ph-icon {
@@ -335,5 +491,162 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
 .flow-char {
   display: inline-block;
   will-change: transform;
+}
+
+// ---------------------------------------------------------------------
+// Scroll reveal: sections fade + rise slightly into view.
+// ---------------------------------------------------------------------
+.reveal {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+  }
+}
+
+// ---------------------------------------------------------------------
+// Research -> Making -> Teaching pathway
+// ---------------------------------------------------------------------
+.pathway {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.pathway-nodes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+}
+
+.pathway-node {
+  padding: 0.6rem 1.4rem;
+  font-family: $display-font;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: $header-bg-color;
+  background: rgba(124, 58, 237, 0.07);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  border-radius: 999px;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.pathway-node:hover {
+  background: rgba(124, 58, 237, 0.14);
+}
+
+.pathway-node.active {
+  color: #fff;
+  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  border-color: transparent;
+}
+
+.pathway-arrow {
+  color: $border-color;
+  font-size: 1.2rem;
+}
+
+.pathway-panels {
+  max-width: 36rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.pathway-panel p {
+  font-size: 1.05rem;
+}
+
+.pathway-panel ul {
+  display: inline-block;
+}
+
+// ---------------------------------------------------------------------
+// Selected Scholarship
+// ---------------------------------------------------------------------
+.scholarship-list {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.scholarship-item {
+  position: relative;
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.scholarship-item:hover {
+  box-shadow: 0 6px 18px rgba(76, 29, 149, 0.1);
+}
+
+.scholarship-item h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.05rem;
+}
+
+.scholarship-meta {
+  font-size: 0.85rem;
+  color: $blockquote-text-color;
+}
+
+.scholarship-links {
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.25s, max-height 0.25s, margin-top 0.25s;
+}
+
+.scholarship-item:hover .scholarship-links,
+.scholarship-item:focus-within .scholarship-links {
+  max-height: 4rem;
+  margin-top: 0.6rem;
+  opacity: 1;
+}
+
+.scholarship-links a {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scholarship-links {
+    transition: none;
+  }
+}
+
+// ---------------------------------------------------------------------
+// Closing links row
+// ---------------------------------------------------------------------
+.closing-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2.5rem 0 0;
+  padding-top: 2rem;
+  border-top: 1px solid $hr-border-color;
+  font-family: $display-font;
+  font-size: 1.05rem;
+}
+
+.closing-links a {
+  font-weight: 600;
 }
 
