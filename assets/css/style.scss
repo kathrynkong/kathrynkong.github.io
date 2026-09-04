@@ -28,10 +28,23 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
   letter-spacing: -0.01em;
 }
 
-.project-tagline {
+.identity-markers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0 0 1.5rem;
+}
+
+.identity-marker {
+  padding: 0.4rem 1rem;
   font-family: $display-font;
   font-style: italic;
-  font-weight: 400;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
 }
 
 // ---------------------------------------------------------------------
@@ -82,8 +95,7 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
   background-size: cover;
 }
 
-.project-name,
-.project-tagline {
+.project-name {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
@@ -314,5 +326,14 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
   left: 0;
   font-size: 0.8em;
   opacity: 0.7;
+}
+
+// ---------------------------------------------------------------------
+// Flowing text (assets/js/flow-text.js): letters near the cursor
+// drift away with a spring-like ease.
+// ---------------------------------------------------------------------
+.flow-char {
+  display: inline-block;
+  will-change: transform;
 }
 
