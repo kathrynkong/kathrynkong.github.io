@@ -119,15 +119,15 @@ title: Home
     <span class="cm-cta">Launch Project →</span>
   </a>
 
-  <a class="card card--research cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/bitsygame.html" target="_blank" rel="noopener">
+  <a class="card card--research cm-card" href="{{ '/whiskers-journey/' | relative_url }}">
     <span class="cm-number">02</span>
     <div class="card-image">
-      <img src="{{ '/assets/critical-making/bitsy.png' | relative_url }}" alt="Title screen of the Bitsy game Whisker's Journey">
+      <img src="{{ '/assets/critical-making/bitsy.png' | relative_url }}" alt="Title screen of Whisker's Journey: A Lost Cat's Tale Across China">
     </div>
     <span class="card-tag card-tag--research">Game-Based Learning</span>
-    <h3>Learning Chinese with Bitsy</h3>
-    <p>A Bitsy minigame teaching basic Chinese vocabulary through play — connecting game production, language pedagogy, and my research agenda.</p>
-    <span class="cm-cta">Play Game →</span>
+    <h3>Whisker's Journey</h3>
+    <p>A narrative microgame for situated Chinese language and cultural learning — connecting game production, language pedagogy, and my research agenda.</p>
+    <span class="cm-cta">Read Case Study →</span>
   </a>
 
   <a class="card card--creative cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/Grammar.html" target="_blank" rel="noopener">
