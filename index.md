@@ -153,6 +153,17 @@ title: Home
     <span class="cm-cta">Experience Project →</span>
   </a>
 
+  <a class="card card--research cm-card" href="{{ '/flamingo-journey/' | relative_url }}">
+    <span class="cm-number">05</span>
+    <div class="card-image">
+      <img src="{{ '/assets/flamingo-journey/thumbnail.png' | relative_url }}" alt="Flamingo Journey species-selection screen, showing a Chilean Flamingo card">
+    </div>
+    <span class="card-tag card-tag--research">Game-Based Learning</span>
+    <h3>Flamingo Journey</h3>
+    <p>A bilingual web game about flamingo species, habitats, and conservation — installable as an app, playable with no account.</p>
+    <span class="cm-cta">Read Case Study →</span>
+  </a>
+
 </div>
 
 <p class="section-cta"><a href="https://kathrynkong.github.io/Critical-Making-Portfolio/" target="_blank" rel="noopener">Explore the complete Critical Making archive →</a></p>
