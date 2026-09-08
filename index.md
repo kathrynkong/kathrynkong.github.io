@@ -121,8 +121,8 @@ title: Home
   <div class="pathway-panel active" data-pathway-panel="research">
     <p>I study how people experience and interpret games, AI, and emerging media.</p>
     <ul>
-      <li>ELLE / AnimELLE</li>
-      <li>Human–AI communication</li>
+      <li>Game-based language learning</li>
+      <li>AI literacy and AI ethics</li>
       <li>Social media research</li>
     </ul>
   </div>
