@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<p class="hero-intro reveal">I research, teach, and design at the intersection of digital media, <a class="keyword" href="{{ '/portfolio/#mato-anomalies' | relative_url }}">games</a>, <a class="keyword" href="{{ '/portfolio/#ai-assisted-game-design' | relative_url }}">artificial intelligence</a>, <a class="keyword" href="{{ '/portfolio/#interactive-game-localization' | relative_url }}">interactive storytelling</a>, and <a class="keyword" href="{{ '/portfolio/#game-based-learning-ux-research' | relative_url }}">learning</a>.</p>
+<p class="hero-intro reveal">I research, teach, and design at the intersection of <a class="keyword" href="{{ '/portfolio/#mato-anomalies' | relative_url }}">video games</a>, <a class="keyword" href="{{ '/portfolio/#ai-assisted-game-design' | relative_url }}">artificial intelligence</a>, <a class="keyword" href="{{ '/portfolio/#interactive-game-localization' | relative_url }}">interactive storytelling</a>, <a class="keyword" href="{{ '/research/#games-localization--intercultural-communication' | relative_url }}">digital and intercultural communication</a>, and <a class="keyword" href="{{ '/portfolio/#game-based-learning-ux-research' | relative_url }}">technology-enhanced language learning</a>.</p>
 
 <div class="reveal" markdown="1">
 
@@ -11,26 +11,27 @@ title: Home
 
 <div class="card-grid">
 
-  <a class="card card--research" href="{{ '/portfolio/#game-based-learning-ux-research' | relative_url }}">
-    <div class="card-image placeholder">
-      <span class="ph-icon">🖼️</span>
-      <span class="ph-caption">Image coming soon: ELLE screenshot</span>
+  <a class="card card--immersive cm-card" href="{{ '/flamingo-journey/' | relative_url }}">
+    <span class="cm-number">01</span>
+    <div class="card-image">
+      <img src="{{ '/assets/flamingo-journey/thumbnail.png' | relative_url }}" alt="Flamingo Journey species-selection screen, showing a Chilean Flamingo card">
     </div>
-    <span class="card-tag card-tag--research">UX / Research</span>
-    <h3>🎮 Game-Based Learning &amp; UX</h3>
-    <p>ELLE — The EndLess Learner: evaluating game-based and immersive language-learning experiences through UX research.</p>
+    <span class="card-tag card-tag--immersive">Multilingual Interactive Learning</span>
+    <h3>🦩 Flamingo Conservation Game</h3>
+    <p>A bilingual web game about flamingo species, habitats, and conservation — installable as an app, playable with no account.</p>
     <div class="card-hover-info">
-      See how UX research shapes game-based learning tools.
+      See how bilingual game design turns conservation facts into a personal stake.
       <span class="view-case-study">View case study →</span>
     </div>
   </a>
 
-  <a class="card card--narrative" href="{{ '/portfolio/#interactive-game-localization' | relative_url }}">
+  <a class="card card--narrative cm-card" href="{{ '/portfolio/#interactive-game-localization' | relative_url }}">
+    <span class="cm-number">02</span>
     <div class="card-image placeholder">
       <span class="ph-icon">🖼️</span>
       <span class="ph-caption">Image coming soon: Twine screenshot</span>
     </div>
-    <span class="card-tag card-tag--narrative">Interactive Narrative</span>
+    <span class="card-tag card-tag--narrative">Interactive Writing</span>
     <h3>✍️ Interactive Narrative &amp; Twine</h3>
     <p>Twine-based interactive narrative and localization experiments.</p>
     <div class="card-hover-info">
@@ -39,53 +40,57 @@ title: Home
     </div>
   </a>
 
-  <a class="card card--creative" href="#critical-making">
-    <div class="card-image">
-      <img src="{{ '/assets/critical-making/twine.png' | relative_url }}" alt="Twine hypertext opening passage from the Critical Making collection">
-    </div>
-    <span class="card-tag card-tag--creative">Creative Coding</span>
-    <h3>💻 Creative Coding &amp; Critical Making</h3>
-    <p>A collection of Twine, Bitsy, generative text, and p5.js projects from a Critical Making course.</p>
-    <div class="card-hover-info">
-      See four hands-on creative-coding projects, live and playable.
-      <span class="view-case-study">View collection →</span>
-    </div>
-  </a>
-
-  <a class="card card--immersive" href="{{ '/portfolio/#vr-immersive-learning' | relative_url }}">
+  <a class="card card--research cm-card" href="{{ '/portfolio/#game-based-learning-ux-research' | relative_url }}">
+    <span class="cm-number">03</span>
     <div class="card-image placeholder">
       <span class="ph-icon">🖼️</span>
-      <span class="ph-caption">Image coming soon: VR/XR image</span>
+      <span class="ph-caption">Image coming soon: ELLE screenshot</span>
     </div>
-    <span class="card-tag card-tag--immersive">XR</span>
-    <h3>🥽 VR &amp; Immersive Learning</h3>
-    <p>Exploring virtual and extended reality for language and narrative learning.</p>
+    <span class="card-tag card-tag--research">Research / UX</span>
+    <h3>🎮 Game-Based Learning &amp; UX</h3>
+    <p>ELLE — The EndLess Learner: evaluating game-based and immersive language-learning experiences through UX research.</p>
     <div class="card-hover-info">
-      Explore immersive and extended-reality approaches to language learning.
+      See how UX research shapes game-based learning tools.
       <span class="view-case-study">View case study →</span>
     </div>
   </a>
 
-  <a class="card" href="{{ '/portfolio/#mato-anomalies' | relative_url }}">
+  <a class="card cm-card" href="{{ '/portfolio/#mato-anomalies' | relative_url }}">
+    <span class="cm-number">04</span>
     <div class="card-image placeholder">
       <span class="ph-icon">🖼️</span>
       <span class="ph-caption">Image coming soon: Mato Anomalies key art</span>
     </div>
-    <span class="card-tag">Professional Practice</span>
-    <h3>🌏 Professional Game Localization</h3>
-    <p>Mato Anomalies — English–Chinese localization for a narrative-driven RPG.</p>
+    <span class="card-tag">Professional Production</span>
+    <h3>🌏 Mato Anomalies</h3>
+    <p>English–Chinese localization for a narrative-driven RPG, shipped and available to players worldwide.</p>
     <div class="card-hover-info">
       See professional localization practice in a shipped RPG.
       <span class="view-case-study">View case study →</span>
     </div>
   </a>
 
-  <a class="card card--teaching" href="{{ '/portfolio/#teaching-digital-media' | relative_url }}">
+  <a class="card card--creative cm-card" href="{{ '/critical-making/' | relative_url }}">
+    <span class="cm-number">05</span>
+    <div class="card-image">
+      <img src="{{ '/assets/critical-making/twine.png' | relative_url }}" alt="Twine hypertext opening passage from the Critical Making collection">
+    </div>
+    <span class="card-tag card-tag--creative">Interactive Production</span>
+    <h3>💻 Critical Making &amp; Creative Coding</h3>
+    <p>Twine · Bitsy · Tracery · p5.js — five hands-on creative-coding and game-based learning projects.</p>
+    <div class="card-hover-info">
+      Explore the full collection, live and playable.
+      <span class="view-case-study">Explore collection →</span>
+    </div>
+  </a>
+
+  <a class="card card--teaching cm-card" href="{{ '/teaching/' | relative_url }}">
+    <span class="cm-number">06</span>
     <div class="card-image placeholder">
       <span class="ph-icon">🖼️</span>
       <span class="ph-caption">Image coming soon: course / lecture visual</span>
     </div>
-    <span class="card-tag card-tag--teaching">Communication &amp; Technology</span>
+    <span class="card-tag card-tag--teaching">Teaching</span>
     <h3>🎓 Teaching Digital Media</h3>
     <p>Course design and classroom artifacts from teaching digital media and language.</p>
     <div class="card-hover-info">
@@ -99,76 +104,6 @@ title: Home
 <p class="section-cta"><a href="{{ '/portfolio/' | relative_url }}">View the full portfolio →</a></p>
 
 </div>
-
-<section class="critical-making reveal" id="critical-making" markdown="1">
-
-## Critical Making &amp; Interactive Media
-
-<p class="section-subtitle">Creative Coding · Interactive Narrative · Games · Procedural Media</p>
-
-<div class="card-grid">
-
-  <a class="card card--narrative cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/CriticalMaking.html" target="_blank" rel="noopener">
-    <span class="cm-number">01</span>
-    <div class="card-image">
-      <img src="{{ '/assets/critical-making/twine.png' | relative_url }}" alt="Opening passage of a Twine hypertext story">
-    </div>
-    <span class="card-tag card-tag--narrative">Interactive Narrative</span>
-    <h3>Twine Hypertext</h3>
-    <p>An interactive hypertext built in Twine, exploring branching narrative structure.</p>
-    <span class="cm-cta">Launch Project →</span>
-  </a>
-
-  <a class="card card--research cm-card" href="{{ '/whiskers-journey/' | relative_url }}">
-    <span class="cm-number">02</span>
-    <div class="card-image">
-      <img src="{{ '/assets/critical-making/bitsy.png' | relative_url }}" alt="Title screen of Whisker's Journey: A Lost Cat's Tale Across China">
-    </div>
-    <span class="card-tag card-tag--research">Game-Based Learning</span>
-    <h3>Whisker's Journey</h3>
-    <p>A narrative microgame for situated Chinese language and cultural learning — connecting game production, language pedagogy, and my research agenda.</p>
-    <span class="cm-cta">Read Case Study →</span>
-  </a>
-
-  <a class="card card--creative cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/Grammar.html" target="_blank" rel="noopener">
-    <span class="cm-number">03</span>
-    <div class="card-image">
-      <img src="{{ '/assets/critical-making/grammar.png' | relative_url }}" alt="Tracery grammar generator producing fandom-inspired text">
-    </div>
-    <span class="card-tag card-tag--creative">Generative Media</span>
-    <h3>Fandom Grammar Generator</h3>
-    <p>A Tracery-based procedural text generator exploring fandom writing and remix culture.</p>
-    <span class="cm-cta">Regenerate →</span>
-  </a>
-
-  <a class="card card--immersive cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/indexjs.html" target="_blank" rel="noopener">
-    <span class="cm-number">04</span>
-    <div class="card-image placeholder">
-      <span class="ph-icon">🖼️</span>
-      <span class="ph-caption">Image coming soon: Cherry Blossom p5.js sketch</span>
-    </div>
-    <span class="card-tag card-tag--immersive">Creative Coding</span>
-    <h3>Cherry Blossom</h3>
-    <p>A generative p5.js sketch exploring digital storytelling through code.</p>
-    <span class="cm-cta">Experience Project →</span>
-  </a>
-
-  <a class="card card--research cm-card" href="{{ '/flamingo-journey/' | relative_url }}">
-    <span class="cm-number">05</span>
-    <div class="card-image">
-      <img src="{{ '/assets/flamingo-journey/thumbnail.png' | relative_url }}" alt="Flamingo Journey species-selection screen, showing a Chilean Flamingo card">
-    </div>
-    <span class="card-tag card-tag--research">Game-Based Learning</span>
-    <h3>Flamingo Journey</h3>
-    <p>A bilingual web game about flamingo species, habitats, and conservation — installable as an app, playable with no account.</p>
-    <span class="cm-cta">Read Case Study →</span>
-  </a>
-
-</div>
-
-<p class="section-cta"><a href="https://kathrynkong.github.io/Critical-Making-Portfolio/" target="_blank" rel="noopener">Explore the complete Critical Making archive →</a></p>
-
-</section>
 
 <section class="pathway reveal" markdown="1">
 
@@ -218,21 +153,20 @@ title: Home
 <div class="scholarship-list">
 
   <div class="scholarship-item">
-    <h3>AI &amp; Human–AI Communication</h3>
-    <p class="scholarship-meta fill-me">Add the paper title, venue, and year.</p>
-    <div class="scholarship-links fill-me">Abstract · View publication · Related project</div>
-  </div>
-
-  <div class="scholarship-item">
     <h3>Game-Based Learning</h3>
-    <p class="scholarship-meta fill-me">Add the paper title, venue, and year.</p>
-    <div class="scholarship-links fill-me">Abstract · View publication · Related project</div>
+    <p class="scholarship-meta">Kong, Y. &amp; Johnson, E. K. (2026). "The Future of Language Learning is Fun: Gaming Behaviors and Preferences of L2 Students." <em>Journal of Applied Instructional Design.</em></p>
+    <div class="scholarship-links"><a href="https://doi.org/10.59668/2579.26742" target="_blank" rel="noopener">View publication →</a></div>
   </div>
 
   <div class="scholarship-item">
-    <h3>Interactive &amp; Digital Storytelling</h3>
-    <p class="scholarship-meta fill-me">Add the conference project title, venue, and year.</p>
-    <div class="scholarship-links fill-me">Abstract · View publication · Related project</div>
+    <h3>Interactive Storytelling &amp; Localization</h3>
+    <p class="scholarship-meta">Kong, Yingzi (2024). "Exploring Game Localization Through Interactive Narratives in Twine." <em>Electronic Literature Organization (ELO) (un)linked 2024 Conference.</em></p>
+    <div class="scholarship-links"><a href="https://stars.library.ucf.edu/elo2024/hypertextsandfictions/schedule/4/" target="_blank" rel="noopener">View conference page →</a></div>
+  </div>
+
+  <div class="scholarship-item">
+    <h3>AI &amp; Digital Communication</h3>
+    <p class="scholarship-meta">Hall, A. &amp; Kong, Y. (2025). "Race, Technology, and Trust: Examining the Cheating Discourse Among Black and Asian AI Users." <em>IEEE ProComm 2025.</em></p>
   </div>
 
 </div>

@@ -5,7 +5,66 @@ title: Portfolio
 
 # Portfolio
 
-A working showcase of digital media, game, and language-learning projects — spanning professional localization, research prototypes, and teaching. Sections marked "Content coming soon" are placeholders being actively filled in.
+What I've made, designed, and tested — spanning professional localization, playable interactive-media projects, and research prototypes. Sections marked "Content coming soon" are placeholders being actively filled in.
+
+## Interactive Media & Game Design
+
+<div class="card-grid">
+
+  <a class="card card--immersive cm-card" href="{{ '/flamingo-journey/' | relative_url }}">
+    <div class="card-image">
+      <img src="{{ '/assets/flamingo-journey/thumbnail.png' | relative_url }}" alt="Flamingo Journey species-selection screen, showing a Chilean Flamingo card">
+    </div>
+    <span class="card-tag card-tag--immersive">Multilingual Interactive Learning</span>
+    <h3>🦩 Flamingo Conservation Game</h3>
+    <p>A bilingual web game about flamingo species, habitats, and conservation — installable as an app, playable with no account.</p>
+    <span class="cm-cta">Read Case Study →</span>
+  </a>
+
+  <a class="card card--research cm-card" href="{{ '/whiskers-journey/' | relative_url }}">
+    <div class="card-image">
+      <img src="{{ '/assets/critical-making/bitsy.png' | relative_url }}" alt="Title screen of Whisker's Journey: A Lost Cat's Tale Across China">
+    </div>
+    <span class="card-tag card-tag--research">Game-Based Learning</span>
+    <h3>Whisker's Journey</h3>
+    <p>A narrative microgame for situated Chinese language and cultural learning — connecting game production, language pedagogy, and my research agenda.</p>
+    <span class="cm-cta">Read Case Study →</span>
+  </a>
+
+  <a class="card card--narrative cm-card" id="interactive-game-localization" href="https://kathrynkong.github.io/Critical-Making-Portfolio/CriticalMaking.html" target="_blank" rel="noopener">
+    <div class="card-image">
+      <img src="{{ '/assets/critical-making/twine.png' | relative_url }}" alt="Opening passage of a Twine hypertext story">
+    </div>
+    <span class="card-tag card-tag--narrative">Interactive Narrative</span>
+    <h3>Twine Interactive Narrative</h3>
+    <p>An interactive hypertext built in Twine, exploring branching narrative structure and localization decisions.</p>
+    <span class="cm-cta">Launch Project →</span>
+  </a>
+
+  <a class="card card--creative cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/Grammar.html" target="_blank" rel="noopener">
+    <div class="card-image">
+      <img src="{{ '/assets/critical-making/grammar.png' | relative_url }}" alt="Tracery grammar generator producing fandom-inspired text">
+    </div>
+    <span class="card-tag card-tag--creative">Generative Media</span>
+    <h3>Tracery Grammar Generator</h3>
+    <p>A Tracery-based procedural text generator exploring fandom writing and remix culture.</p>
+    <span class="cm-cta">Regenerate →</span>
+  </a>
+
+  <a class="card card--ai cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/indexjs.html" target="_blank" rel="noopener">
+    <div class="card-image placeholder">
+      <span class="ph-icon">🖼️</span>
+      <span class="ph-caption">Image coming soon: Cherry Blossom p5.js sketch</span>
+    </div>
+    <span class="card-tag card-tag--ai">Creative Coding</span>
+    <h3>p5.js Creative Coding</h3>
+    <p>Cherry Blossom — a generative p5.js sketch exploring digital storytelling through code.</p>
+    <span class="cm-cta">Experience Project →</span>
+  </a>
+
+</div>
+
+## Professional Practice
 
 <div class="case-study" id="mato-anomalies" markdown="1">
 
@@ -49,6 +108,8 @@ Game localization is not word-for-word translation — it's re-authoring narrati
 
 </div>
 
+## Research & UX Prototypes
+
 <div class="case-study" id="game-based-learning-ux-research" markdown="1">
 
 <span class="status-badge live">In Progress</span>
@@ -80,22 +141,6 @@ See the [Research]({{ "/research/" | relative_url }}) page for the academic fram
 
 </div>
 
-<div class="case-study" id="interactive-game-localization" markdown="1">
-
-<span class="status-badge coming-soon">Content coming soon</span>
-
-## Interactive Game Localization
-{: #interactive-game-localization-heading}
-
-<div class="card-image placeholder">
-  <span class="ph-icon">🖼️</span>
-  <span class="ph-caption">Image coming soon: Twine screenshot</span>
-</div>
-
-<span class="fill-me">Describe your Twine-based interactive narrative / localization work here: the project, your role, tools used, and a link or embed if it's publicly playable.</span>
-
-</div>
-
 <div class="case-study" id="vr-immersive-learning" markdown="1">
 
 <span class="status-badge coming-soon">Content coming soon</span>
@@ -124,21 +169,5 @@ See the [Research]({{ "/research/" | relative_url }}) page for the academic fram
 </div>
 
 <span class="fill-me">Describe how you've used generative AI in game or learning-content design workflows: the tools, the process, and an example output.</span>
-
-</div>
-
-<div class="case-study" id="teaching-digital-media" markdown="1">
-
-<span class="status-badge coming-soon">Content coming soon</span>
-
-## Teaching Digital Media
-{: #teaching-digital-media-heading}
-
-<div class="card-image placeholder">
-  <span class="ph-icon">🖼️</span>
-  <span class="ph-caption">Image coming soon: course / lecture visual</span>
-</div>
-
-<span class="fill-me">Add course materials, syllabi excerpts, or classroom artifacts from teaching digital media. See the <a href="{{ "/teaching/" | relative_url }}">Teaching</a> page for course history.</span>
 
 </div>
