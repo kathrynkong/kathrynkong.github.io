@@ -15,7 +15,7 @@ What I've made, designed, and tested — spanning professional localization, pla
     <div class="card-image">
       <img src="{{ '/assets/flamingo-journey/flamingo.png' | relative_url }}" alt="Flamingo Journey species-selection screen, showing a Chilean Flamingo card">
     </div>
-    <span class="card-tag card-tag--immersive">Multilingual Interactive Learning</span>
+    <span class="card-tag card-tag--immersive">Bilingual Interactive Learning</span>
     <h3>🦩 Flamingo Conservation Game</h3>
     <p>A bilingual web game about flamingo species, habitats, and conservation — installable as an app, playable with no account.</p>
     <span class="cm-cta">Read Case Study →</span>
