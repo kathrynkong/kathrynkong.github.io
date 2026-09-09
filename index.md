@@ -23,7 +23,7 @@ title: Home
     </div>
   </a>
 
-  <a class="card card--narrative cm-card" href="{{ '/portfolio/#interactive-game-localization' | relative_url }}">
+  <a class="card card--narrative cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/Timeline.html" target="_blank" rel="noopener">
     <span class="cm-number">02</span>
     <div class="card-image placeholder">
       <span class="ph-icon">🖼️</span>
