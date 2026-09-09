@@ -10,9 +10,9 @@ I am a Ph.D. candidate in Texts and Technology at the University of Central Flor
 
 I have held a Graduate Research Assistantship at UCF's Center for Humanities and Digital Research since August 2023.
 
-## Games, Learning & Interactive Media
+## Language Learning, Games & Digital Media
 
-Alongside localization, I study how games and interactive media support second-language learning — from evaluating VR and desktop learning tools to designing generative-AI systems for the language classroom.
+I study second-language learning across both formal and informal contexts, including game-based learning, immersive media, online fandom, and digital communities.
 
 - **ELLE / AnimELLE** — see the [Game-Based Learning & UX case study]({{ "/portfolio/#game-based-learning-ux-research" | relative_url }}) on the Portfolio page.
 - **VR & desktop language learning** — see [VR & Immersive Learning]({{ "/portfolio/#vr-immersive-learning" | relative_url }}) on the Portfolio page.
