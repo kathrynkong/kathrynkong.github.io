@@ -26,7 +26,7 @@ What I've researched, designed and presented.
       <img src="{{ '/assets/critical-making/twinecover.png' | relative_url }}" alt="Opening passage of a Twine hypertext story">
     </div>
     <span class="card-tag card-tag--narrative">Twine Interactive Narrative</span>
-    <h3>Digital Exploration of Game Localization</h3>
+    <h3>✍️ Digital Exploration of Game Localization</h3>
     <p>An interactive hypertext built in Twine, exploring the history of game localization.</p>
     <span class="cm-cta">Launch Project →</span>
   </a>
@@ -36,7 +36,7 @@ What I've researched, designed and presented.
       <img src="{{ '/assets/ai-portfolio/cat-game-16x9.png' | relative_url }}" alt="Three pastel-colored doors and three cats from the procedural cat game">
     </div>
     <span class="card-tag card-tag--creative">Procedural Game Design &amp; Creative Coding</span>
-    <h3>Cats, Riddles &amp; Procedural Play</h3>
+    <h3>🐱 Cats, Riddles &amp; Procedural Play</h3>
     <p>A state-based microgame where player choices change character moods, dynamically shaping dialogue, riddles, and rewards across playthroughs.</p>
     <span class="cm-cta">Play the Game →</span>
   </a>
