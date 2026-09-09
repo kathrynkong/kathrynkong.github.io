@@ -5,7 +5,7 @@ title: Research
 
 # Research
 
-My research sits at the intersection of games, localization, and artificial intelligence — organized here into three strands that, together, explain the "digital and intercultural communication" and "technology-enhanced language learning" in my homepage statement.
+My research examines how games, artificial intelligence, and interactive media shape communication and learning across languages and cultures. I organize this work across three intersecting strands: game localization and intercultural communication, games and learning, and AI-mediated digital communication.
 
 ## Games, Localization & Intercultural Communication
 
