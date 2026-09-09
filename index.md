@@ -28,11 +28,11 @@ title: Home
     <div class="card-image">
       <img src="{{ '/assets/critical-making/twine-cover-16x9.png' | relative_url }}" alt="Games Across Languages: illustrated cover art for the Twine project, showing a Game Boy dissolving into pixels, a ribbon linking cherry blossoms and a city skyline, and English/Japanese speech bubbles">
     </div>
-    <span class="card-tag card-tag--narrative">Digital Storytelling & Game Localization</span>
-    <h3>✍️ Interactive Narrative &amp; Twine</h3>
-    <p>Twine-based interactive narrative and localization experiments.</p>
+    <span class="card-tag card-tag--narrative">Interactive Narrative &amp; Twine</span>
+    <h3>✍️ Digital Exploration of Game Localization</h3>
+    <p>Twine-based interactive narratives about the history of game localization.</p>
     <div class="card-hover-info">
-      Explore how interactive narrative makes localization decisions visible.
+      An interactive Twine narrative exploring the history and evolution of game localization at the intersection of video game history, localization practice, and translation studies.
       <span class="view-case-study">View case study →</span>
     </div>
   </a>
