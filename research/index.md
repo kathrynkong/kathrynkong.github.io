@@ -6,53 +6,9 @@ description: Research on game localization, language learning, human–AI commun
 
 # Research
 
-My research examines how games, artificial intelligence, and interactive media shape communication and learning across languages and cultures. I organize this work across three intersecting strands: game localization and intercultural communication, games and learning, and AI-mediated digital communication.
+I am a Ph.D. candidate in Texts and Technology at the University of Central Florida, specializing in Digital Media, Digital Humanities, and Technical Communication, with an expected graduation date of May 2027. My research examines how games, artificial intelligence, and other interactive technologies shape communication and learning across languages and cultures.
 
-I am a Ph.D. candidate in Texts and Technology at the University of Central Florida, with an emphasis on Digital Media, Digital Humanities, and Technical Communication (expected May 2027). I have held a Graduate Research Assistantship at UCF's Center for Humanities and Digital Research since August 2023.
-
-## Games, Localization & Intercultural Communication
-
-<p class="wj-question">My research on game localization began with my master's thesis and continued into my doctoral work, where I expanded from translation-focused questions toward computational, multimodal, and player-centered approaches to localization and digital communication.</p>
-
-<div class="wj-pipeline">
-  <span>MA Thesis — Game Localization</span>
-  <span class="pathway-arrow" aria-hidden="true">→</span>
-  <span>Translating Personas — RPG Characterization</span>
-  <span class="pathway-arrow" aria-hidden="true">→</span>
-  <span>Interactive Localization — Twine</span>
-  <span class="pathway-arrow" aria-hidden="true">→</span>
-  <span>Professional Practice — Mato Anomalies</span>
-</div>
-
-### MA Thesis — Game Localization
-
-*Translation Strategies of Culture-Specific Items in Chinese-English Game Localization.* M.A. Thesis, Translation Studies, Hankuk University of Foreign Studies (HUFS), 2020–2022. Advisor: Seung-eun Sung.
-
-During the same period I also contributed to "Indirect Translation Research on Movie Subtitles – Based on Actor-Network Theory," led by Gun-Young Park, Ph.D. of HUFS (Sep.–Dec. 2021), extending this early interest in translation theory to audiovisual media.
-
-### Translating Personas — Characterization Shifts in RPG Localization
-
-A pilot study using *Genshin Impact* to ask how a character's linguistic identity shifts between the original Chinese and its English localization.
-
-- Selected the ten most player-discussed characters by scraping localization-focused Reddit threads (PRAW-academic) and matching mentions against the game's full character list.
-- Collected paired English and Chinese voiceover datasets for those characters directly from the game's fan wiki.
-- Ran a semantic analysis (word clouds, top-word frequency, lexical density, filler words) and a pragmatic analysis (modal verbs, sentiment via TextBlob for English and SnowNLP for Chinese) in Python, framed through Systemic Functional Linguistics.
-- Found notable divergences — Chinese lines with strongly positive sentiment were sometimes rendered in English text that scored neutral or negative — suggesting the localization process measurably reshapes how a character reads emotionally.
-
-This pilot's quantitative analysis is complete; the qualitative follow-up is ongoing as it feeds into a larger, multimodal project on characterization in game localization.
-
-### Interactive Localization — Twine
-
-A [Twine hypertext project](https://kathrynkong.github.io/Critical-Making-Portfolio/CriticalMaking.html) exploring branching narrative structure as a way to make localization decisions visible to the player, presented at ELO 2024 (see publications below).
-
-### Professional Practice — Mato Anomalies
-
-Localization practice grounds this strand in shipped, professional work — see the [Mato Anomalies case study]({{ "/portfolio/#mato-anomalies" | relative_url }}) on the Portfolio page.
-
-**Related Publications & Presentations**
-
-- Kong, Yingzi (2024). [Exploring Game Localization Through Interactive Narratives in Twine](https://stars.library.ucf.edu/elo2024/hypertextsandfictions/schedule/4/). *Electronic Literature Organization (ELO) (un)linked 2024 Conference.* [Conference page →](https://stars.library.ucf.edu/elo2024/hypertextsandfictions/schedule/4/)
-- Kong, Yingzi (2025). "Bias Embedded and Amplified in Neural Machine Translation (NMT) – A Critical Code Study of LibreTranslate." *The Association for Computers and the Humanities (ACH) 2025.*
+I have held a Graduate Research Assistantship at UCF's Center for Humanities and Digital Research since August 2023.
 
 ## Games, Learning & Interactive Media
 
@@ -85,6 +41,40 @@ My work also examines how people engage with AI beyond the classroom — from af
 - Kong, Yingzi (2026). [Algorithmic Narrators: Linguistic Boundaries and Institutionalized Cultural Storytelling Across Generative AI Systems](https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/40/). *Electronic Literature Organization (ELO) (un)supervised 2026 Conference,* Online, July 15–18, 2026. [Conference page →](https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/40/)
 - Kong, Yingzi (2024). "Adaptive Pedagogy in the Digital Age: A Comparative Analysis of YouTube Educational Influencers' Use of ChatGPT for English Language Learning." *ACM SIGDOC '24,* Washington DC, October 20–22, 2024.
 - Kong, Yingzi (2024). "Where Does Artificial Intimacy Lead – Falling Love with The DAN Chatbot of ChatGPT." *The 3rd Annual Conference of the Florida Digital Humanities Consortium (FLDH),* University of Central Florida, Orlando, FL, September 20, 2024.
+
+## Games, Localization & Intercultural Communication
+
+<p class="wj-question">My research on game localization began with my master's thesis and continued into my doctoral work, where I expanded from translation-focused questions toward computational, multimodal, and player-centered approaches to localization and digital communication.</p>
+
+### MA Thesis — Game Localization
+
+*Translation Strategies of Culture-Specific Items in Chinese-English Game Localization.* M.A. Thesis, Translation Studies, Hankuk University of Foreign Studies (HUFS), 2020–2022. Advisor: Seung-eun Sung.
+
+During the same period I also contributed to "Indirect Translation Research on Movie Subtitles – Based on Actor-Network Theory," led by Gun-Young Park, Ph.D. of HUFS (Sep.–Dec. 2021), extending this early interest in translation theory to audiovisual media.
+
+### Translating Personas — Characterization Shifts in RPG Localization
+
+A pilot study using *Genshin Impact* to ask how a character's linguistic identity shifts between the original Chinese and its English localization.
+
+- Selected the ten most player-discussed characters by scraping localization-focused Reddit threads (PRAW-academic) and matching mentions against the game's full character list.
+- Collected paired English and Chinese voiceover datasets for those characters directly from the game's fan wiki.
+- Ran a semantic analysis (word clouds, top-word frequency, lexical density, filler words) and a pragmatic analysis (modal verbs, sentiment via TextBlob for English and SnowNLP for Chinese) in Python, framed through Systemic Functional Linguistics.
+- Found notable divergences — Chinese lines with strongly positive sentiment were sometimes rendered in English text that scored neutral or negative — suggesting the localization process measurably reshapes how a character reads emotionally.
+
+This pilot's quantitative analysis is complete; the qualitative follow-up is ongoing as it feeds into a larger, multimodal project on characterization in game localization.
+
+### Interactive Localization — Twine
+
+A [Twine hypertext project](https://kathrynkong.github.io/Critical-Making-Portfolio/CriticalMaking.html) exploring branching narrative structure as a way to make localization decisions visible to the player, presented at ELO 2024 (see publications below).
+
+### Professional Practice — Mato Anomalies
+
+Localization practice grounds this strand in shipped, professional work — see the [Mato Anomalies case study]({{ "/portfolio/#mato-anomalies" | relative_url }}) on the Portfolio page.
+
+**Related Publications & Presentations**
+
+- Kong, Yingzi (2024). [Exploring Game Localization Through Interactive Narratives in Twine](https://stars.library.ucf.edu/elo2024/hypertextsandfictions/schedule/4/). *Electronic Literature Organization (ELO) (un)linked 2024 Conference.* [Conference page →](https://stars.library.ucf.edu/elo2024/hypertextsandfictions/schedule/4/)
+- Kong, Yingzi (2025). "Bias Embedded and Amplified in Neural Machine Translation (NMT) – A Critical Code Study of LibreTranslate." *The Association for Computers and the Humanities (ACH) 2025.*
 
 ## Research Projects
 
