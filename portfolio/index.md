@@ -23,7 +23,7 @@ What I've researched, designed and presented.
 
   <a class="card card--narrative cm-card" id="interactive-game-localization" href="https://kathrynkong.github.io/Critical-Making-Portfolio/Timeline.html" target="_blank" rel="noopener">
     <div class="card-image">
-      <img src="{{ '/assets/critical-making/twine.png' | relative_url }}" alt="Opening passage of a Twine hypertext story">
+      <img src="{{ '/assets/critical-making/twinecover.png' | relative_url }}" alt="Opening passage of a Twine hypertext story">
     </div>
     <span class="card-tag card-tag--narrative">Twine Interactive Narrative</span>
     <h3>Digital Exploration of Game Localization</h3>
