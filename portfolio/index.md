@@ -21,16 +21,6 @@ What I've made, designed, and tested — spanning professional localization, pla
     <span class="cm-cta">Read Case Study →</span>
   </a>
 
-  <a class="card card--research cm-card" href="{{ '/whiskers-journey/' | relative_url }}">
-    <div class="card-image">
-      <img src="{{ '/assets/critical-making/bitsy.png' | relative_url }}" alt="Title screen of Whisker's Journey: A Lost Cat's Tale Across China">
-    </div>
-    <span class="card-tag card-tag--research">Game-Based Learning</span>
-    <h3>Whisker's Journey</h3>
-    <p>A narrative microgame for situated Chinese language and cultural learning — connecting game production, language pedagogy, and my research agenda.</p>
-    <span class="cm-cta">Read Case Study →</span>
-  </a>
-
   <a class="card card--narrative cm-card" id="interactive-game-localization" href="https://kathrynkong.github.io/Critical-Making-Portfolio/CriticalMaking.html" target="_blank" rel="noopener">
     <div class="card-image">
       <img src="{{ '/assets/critical-making/twine.png' | relative_url }}" alt="Opening passage of a Twine hypertext story">
@@ -41,25 +31,14 @@ What I've made, designed, and tested — spanning professional localization, pla
     <span class="cm-cta">Launch Project →</span>
   </a>
 
-  <a class="card card--creative cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/Grammar.html" target="_blank" rel="noopener">
+  <a class="card card--creative cm-card" href="https://kathrynkong.github.io/AI_Portfolio/game/index.html" target="_blank" rel="noopener">
     <div class="card-image">
-      <img src="{{ '/assets/critical-making/grammar.png' | relative_url }}" alt="Tracery grammar generator producing fandom-inspired text">
+      <img src="{{ '/assets/ai-portfolio/cat-game-16x9.png' | relative_url }}" alt="Three pastel-colored doors and three cats from the procedural cat game">
     </div>
-    <span class="card-tag card-tag--creative">Generative Media</span>
-    <h3>Tracery Grammar Generator</h3>
-    <p>A Tracery-based procedural text generator exploring fandom writing and remix culture.</p>
-    <span class="cm-cta">Regenerate →</span>
-  </a>
-
-  <a class="card card--ai cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/indexjs.html" target="_blank" rel="noopener">
-    <div class="card-image placeholder">
-      <span class="ph-icon">🖼️</span>
-      <span class="ph-caption">Image coming soon: Cherry Blossom p5.js sketch</span>
-    </div>
-    <span class="card-tag card-tag--ai">Creative Coding</span>
-    <h3>p5.js Creative Coding</h3>
-    <p>Cherry Blossom — a generative p5.js sketch exploring digital storytelling through code.</p>
-    <span class="cm-cta">Experience Project →</span>
+    <span class="card-tag card-tag--creative">Procedural Game Design &amp; Creative Coding</span>
+    <h3>Cats, Riddles &amp; Procedural Play</h3>
+    <p>A state-based microgame where player choices change character moods, dynamically shaping dialogue, riddles, and rewards across playthroughs.</p>
+    <span class="cm-cta">Play the Game →</span>
   </a>
 
 </div>
@@ -76,12 +55,11 @@ What I've made, designed, and tested — spanning professional localization, pla
 <strong>Role:</strong> Game Localization Specialist (English–Chinese)<br>
 <strong>Studio:</strong> Arrowiz Games, Shanghai, China<br>
 <strong>Timeline:</strong> Jul. 2021 – Mar. 2023<br>
-<strong>Skills:</strong> Game Localization · Interactive Narrative · Cross-Cultural Communication
+<strong>Skills:</strong> Game Localization · Cross-Cultural Communication
 </div>
 
-<div class="card-image placeholder">
-  <span class="ph-icon">🖼️</span>
-  <span class="ph-caption">Image coming soon: Mato Anomalies key art / gameplay screenshot</span>
+<div class="card-image">
+  <img src="{{ '/portfolio/mato.jpg' | relative_url }}" alt="Mato Anomalies key art, showing the game's two protagonists against a neon cyberpunk cityscape">
 </div>
 
 **Project**
