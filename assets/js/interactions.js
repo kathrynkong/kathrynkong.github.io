@@ -1,7 +1,6 @@
-// Small, restrained homepage interactions: a header easter egg, the
+// Small, restrained homepage interactions: the header Contact menu, the
 // Research/Making/Teaching pathway tabs, and a scroll-reveal fade-in
-// for major sections. (Hero keywords are plain links to the Portfolio
-// page's anchors — no JS needed for those.)
+// for major sections.
 (function () {
   "use strict";
 
@@ -10,26 +9,47 @@
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   document.addEventListener("DOMContentLoaded", function () {
-    initPawEasterEgg();
+    initContactMenu();
     initPathway();
     initScrollReveal();
   });
 
-  // --- Paw easter egg --------------------------------------------------
-  function initPawEasterEgg() {
-    var btn = document.querySelector(".paw-easter-egg");
-    var msg = document.querySelector(".paw-easter-egg-message");
-    if (!btn || !msg) return;
+  // --- Contact menu ------------------------------------------------------
+  function initContactMenu() {
+    var btn = document.querySelector(".contact-toggle");
+    var menu = document.querySelector(".contact-menu");
+    if (!btn || !menu) return;
 
-    var timer = null;
-    btn.addEventListener("click", function () {
-      msg.textContent =
-        "🐾 Site supervised by two highly opinionated research assistants.";
-      msg.classList.add("visible");
-      if (timer) window.clearTimeout(timer);
-      timer = window.setTimeout(function () {
-        msg.classList.remove("visible");
-      }, 2000);
+    function close() {
+      menu.hidden = true;
+      btn.setAttribute("aria-expanded", "false");
+    }
+
+    function open() {
+      menu.hidden = false;
+      btn.setAttribute("aria-expanded", "true");
+    }
+
+    btn.addEventListener("click", function (event) {
+      event.stopPropagation();
+      if (menu.hidden) {
+        open();
+      } else {
+        close();
+      }
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!menu.hidden && !menu.contains(event.target) && event.target !== btn) {
+        close();
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && !menu.hidden) {
+        close();
+        btn.focus();
+      }
     });
   }
 
