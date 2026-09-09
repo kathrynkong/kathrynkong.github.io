@@ -51,50 +51,6 @@ title: Home
     </div>
   </a>
 
-  <a class="card cm-card" href="{{ '/portfolio/#mato-anomalies' | relative_url }}">
-    <span class="cm-number">04</span>
-    <div class="card-image placeholder">
-      <span class="ph-icon">🖼️</span>
-      <span class="ph-caption">Image coming soon: Mato Anomalies key art</span>
-    </div>
-    <span class="card-tag">Professional Production</span>
-    <h3>🌏 Mato Anomalies</h3>
-    <p>English–Chinese localization for a narrative-driven RPG, shipped and available to players worldwide.</p>
-    <div class="card-hover-info">
-      See professional localization practice in a shipped RPG.
-      <span class="view-case-study">View case study →</span>
-    </div>
-  </a>
-
-  <a class="card card--creative cm-card" href="{{ '/critical-making/' | relative_url }}">
-    <span class="cm-number">05</span>
-    <div class="card-image">
-      <img src="{{ '/assets/critical-making/twine.png' | relative_url }}" alt="Twine hypertext opening passage from the Critical Making collection">
-    </div>
-    <span class="card-tag card-tag--creative">Interactive Production</span>
-    <h3>💻 Critical Making &amp; Creative Coding</h3>
-    <p>Twine · Bitsy · Tracery · p5.js — five hands-on creative-coding and game-based learning projects.</p>
-    <div class="card-hover-info">
-      Explore the full collection, live and playable.
-      <span class="view-case-study">Explore collection →</span>
-    </div>
-  </a>
-
-  <a class="card card--teaching cm-card" href="{{ '/teaching/' | relative_url }}">
-    <span class="cm-number">06</span>
-    <div class="card-image placeholder">
-      <span class="ph-icon">🖼️</span>
-      <span class="ph-caption">Image coming soon: course / lecture visual</span>
-    </div>
-    <span class="card-tag card-tag--teaching">Teaching</span>
-    <h3>🎓 Teaching Digital Media</h3>
-    <p>Course design and classroom artifacts from teaching digital media and language.</p>
-    <div class="card-hover-info">
-      See how classroom practice connects to digital media research.
-      <span class="view-case-study">View case study →</span>
-    </div>
-  </a>
-
 </div>
 
 <p class="section-cta"><a href="{{ '/portfolio/' | relative_url }}">View the full portfolio →</a></p>
