@@ -32,7 +32,7 @@ title: Home
     <h3>✍️ Digital Exploration of Game Localization</h3>
     <p>Twine-based interactive narratives about the history of game localization.</p>
     <div class="card-hover-info">
-      An interactive Twine narrative exploring the history and evolution of game localization at the intersection of video game history, localization practice, and translation studies.
+      Explore the history of game localization.
       <span class="view-case-study">View case study →</span>
     </div>
   </a>
