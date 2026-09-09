@@ -17,16 +17,21 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <button type="button" class="contact-toggle" aria-expanded="false" aria-controls="contact-menu">Contact</button>
-      <div class="contact-menu" id="contact-menu" hidden>
-        <a href="https://www.linkedin.com/in/kathryn-kong-531537159/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://bsky.app/profile/yingzi.bsky.social" target="_blank" rel="noopener">Bluesky</a>
-        <a href="mailto:yingzi.kong@ucf.edu">Email</a>
-      </div>
       <h1 class="project-name flow-text hero-fade" style="animation-delay: 0s">{{ site.title }}</h1>
       <h2 class="project-tagline hero-fade" style="animation-delay: 0.2s">{{ site.description }}</h2>
       <p class="hero-intro-banner hero-fade" style="animation-delay: 0.3s">I research, teach, and design at the intersection of video games, digital storytelling, technical and intercultural communication, language learning, and AI literacy.</p>
-      <nav class="site-nav hero-fade" aria-label="Primary" style="animation-delay: 0.5s">
+      <div class="header-icons hero-fade" style="animation-delay: 0.4s">
+        <a class="header-icon-link" href="https://scholar.google.com/citations?user=6-urufUAAAAJ&hl=en" target="_blank" rel="noopener">🎓 Google Scholar</a>
+        <div class="contact-wrapper">
+          <button type="button" class="header-icon-link contact-toggle" aria-expanded="false" aria-controls="contact-menu">✉️ Contact</button>
+          <div class="contact-menu" id="contact-menu" hidden>
+            <a href="https://www.linkedin.com/in/kathryn-kong-531537159/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://bsky.app/profile/yingzi.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+            <a href="mailto:yingzi.kong@ucf.edu">Email</a>
+          </div>
+        </div>
+      </div>
+      <nav class="site-nav hero-fade" aria-label="Primary" style="animation-delay: 0.6s">
         <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
         <a href="{{ '/portfolio/' | relative_url }}"{% if page.url contains '/portfolio/' %} class="active"{% endif %}>Portfolio</a>
         <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' %} class="active"{% endif %}>Research</a>
