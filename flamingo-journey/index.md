@@ -1,25 +1,27 @@
 ---
 layout: default
 title: Flamingo Journey
-description: A bilingual educational game about hatching, migrating, and protecting flamingo habitats around the world.
+description: An AI-assisted conservation game design project exploring wetland ecosystems, meaningful choices, and English–Spanish learning.
 ---
 
 <div class="wj-hero">
-  <img class="wj-hero-image" src="{{ '/assets/flamingo-journey/thumbnail.png' | relative_url }}" alt="Flamingo Journey species-selection screen, showing a Chilean Flamingo card">
+  <img class="wj-hero-image" src="{{ '/flamingo-game/art/wetland-fresh.png' | relative_url }}" alt="AI-generated wetland illustration used in Flamingo Journey, with pink flamingos, turquoise water, and pale mountains">
   <h1>Flamingo Journey</h1>
-  <p class="wj-hero-subtitle">A Bilingual Game About Flamingo Habitats &amp; Conservation</p>
-  <p class="wj-hero-tags">React · Bilingual Language Learning · Game-Based Learning · Conservation Education</p>
+  <p class="wj-hero-subtitle">An AI-Assisted Game Design Project Exploring Conservation and Bilingual Learning</p>
+  <p class="wj-hero-tags">Interactive Storytelling · Conservation Education · English–Spanish Learning · AI-Assisted Design</p>
   <p class="section-cta"><a href="{{ '/flamingo-game/' | relative_url }}" target="_blank" rel="noopener">Play the Game →</a></p>
-  <p class="wj-credit">Designed and developed by Kathryn Kong</p>
+  <p class="wj-credit">Design and development: Kathryn Kong, with AI assistance</p>
 </div>
 
 <section class="reveal" markdown="1">
 
 ## Design Question
 
-<p class="wj-question">How might a game turn factual knowledge about an endangered species into a personal stake, while teaching vocabulary in two languages at once?</p>
+<p class="wj-question">How might a game encourage players to understand conservation as ongoing care rather than a series of correct answers?</p>
 
-Flamingo Journey is a small, self-contained web game: players hatch as a flamingo chick, discover which of five real flamingo species they are, and travel between that species' actual homelands — learning its diet, habitat, and behavior, and making a conservation choice at each stop.
+Flamingo Journey is an illustrated web game that invites players to read a wetland landscape, make conservation decisions, and see how their choices unfold over three changing seasons. It explores how interactive systems, bilingual content, and visual storytelling can turn ecological information into an experience of curiosity and care.
+
+Players consider the connections between water, food, and nesting conditions, then decide which needs to prioritize. English, Spanish, and paired bilingual modes offer different ways to engage with the same experience.
 
 </section>
 
@@ -28,35 +30,21 @@ Flamingo Journey is a small, self-contained web game: players hatch as a flaming
 ## Player Experience
 
 <div class="card-grid">
-
   <div class="card card--narrative cm-card">
-    <span class="cm-number">1</span>
-    <div class="card-image">
-      <img src="{{ '/assets/flamingo-journey/thumbnail.png' | relative_url }}" alt="Hatch screen letting the player choose which flamingo species they are">
-    </div>
-    <h3>Hatch</h3>
-    <p>Choose which of five real flamingo species you are — Chilean, Lesser, Greater, Andean, or James's — and read a short self-discovery passage about your species' body and diet.</p>
+    <span class="cm-number">01</span>
+    <h3>Observe the Landscape</h3>
+    <p>Begin as a Chilean flamingo and explore five flamingo homelands. Collect habitat observations in a field journal and discover the relationships between each species and its environment. These destinations form an educational journey rather than a literal migration route.</p>
   </div>
-
   <div class="card card--research cm-card">
-    <div class="card-image">
-      <img src="{{ '/assets/flamingo-journey/map-preview.png' | relative_url }}" alt="Map screen showing homelands the player can travel to">
-    </div>
-    <span class="cm-number">2</span>
-    <h3>Migrate</h3>
-    <p>Travel a map of your species' real-world homelands, each with its own habitat, behavior, and life-cycle content.</p>
+    <span class="cm-number">02</span>
+    <h3>Choose How to Help</h3>
+    <p>Observations unlock conservation actions. With two action points each season, players decide where to direct their attention. Protecting water flows, reducing pollution, and supporting nesting safety involve different costs and benefits.</p>
   </div>
-
   <div class="card card--creative cm-card">
-    <span class="cm-number">3</span>
-    <div class="card-image placeholder">
-      <span class="ph-icon">🦩</span>
-      <span class="ph-caption">A conservation choice at each homeland</span>
-    </div>
-    <h3>Protect</h3>
-    <p>At each homeland, respond to a real conservation pressure — habitat loss, water diversion, disturbance — and take a short bilingual knowledge check.</p>
+    <span class="cm-number">03</span>
+    <h3>Reflect on What Changes</h3>
+    <p>Seasonal pressures affect the habitat alongside the player's actions. A final report highlights remaining vulnerabilities and encourages another attempt. Optional vocabulary practice connects words to the environments players have explored.</p>
   </div>
-
 </div>
 
 </section>
@@ -66,22 +54,49 @@ Flamingo Journey is a small, self-contained web game: players hatch as a flaming
 ## Design Decisions
 
 <div class="card-grid">
-
   <div class="card card--narrative">
-    <h3>Play First, No Account Needed</h3>
-    <p>The game opens straight into a "Play as guest" option — progress saves to the browser automatically. Signing in is only needed for players who want their progress synced across devices, so the barrier to trying it is zero.</p>
+    <h3>Make Observation Matter</h3>
+    <p>Reading the landscape unlocks actions, connecting ecological information directly to play. The field journal gives players a place to revisit observations and useful words.</p>
   </div>
-
   <div class="card card--research">
-    <h3>Bilingual by Design</h3>
-    <p>Every piece of content — species facts, homeland descriptions, conservation choices — can be read in one or two languages at once, so the game can be used for language learning as well as conservation education.</p>
+    <h3>Make Trade-offs Visible</h3>
+    <p>Water balance, food availability, and nesting safety remain separate indicators. A strong result in one area cannot conceal a vulnerable habitat elsewhere. Limited seasonal action points make prioritization part of the experience.</p>
   </div>
-
   <div class="card card--creative">
-    <h3>Habitat Health as Feedback</h3>
-    <p>Conservation choices at each homeland aggregate into a habitat-health score the player can review on their profile — turning an abstract issue (species decline) into a visible, cumulative consequence of in-game choices.</p>
+    <h3>Support Language Learning Without Punishment</h3>
+    <p>Players can use English, Spanish, or both together. Vocabulary practice is optional, and language mistakes do not damage the habitat.</p>
   </div>
+  <div class="card card--narrative">
+    <h3>Keep Entry Simple</h3>
+    <p>Guest play requires no account, and progress saves on the device. Optional account features support saving and restoring progress. The installable web app supports offline play after its resources have been cached.</p>
+  </div>
+</div>
 
+The habitat indicators are an illustrative teaching model, not measurements of real ecosystems or predictions of the effectiveness of conservation interventions.
+
+</section>
+
+<section class="reveal" markdown="1">
+
+## AI-Assisted Game Design
+
+This project also explores AI-assisted making as a design practice. AI assistance supported the revision process, while the wetland illustration was generated and refined through an iterative visual workflow. The artwork moved from a heavier, sepia-toned scene toward a lighter palette of mint, turquoise, and pink.
+
+The central design work involved deciding how these materials should serve the experience: what players notice, which choices become available, and how consequences are communicated. The illustrated habitat creates a setting for exploration; it does not function as a scientific map.
+
+<div class="card-grid">
+  <div class="card card--creative">
+    <h3>Iterate With Intention</h3>
+    <p>Generating an image was one step in a larger process of selecting, revising, and integrating material. The visual revision emphasized a lighter atmosphere and open space for the game's observation markers.</p>
+  </div>
+  <div class="card card--research">
+    <h3>Keep the Evidence Visible</h3>
+    <p>Conservation content draws on identified natural-history sources. AI-generated artwork and simplified numerical mechanics are labeled according to their role, so an appealing representation is not mistaken for ecological evidence.</p>
+  </div>
+  <div class="card card--narrative">
+    <h3>Distinguish Making From Playing</h3>
+    <p>“AI-assisted” describes the making process. The conservation experience uses authored bilingual content and defined game rules, rather than live AI-generated responses.</p>
+  </div>
 </div>
 
 </section>
@@ -90,19 +105,21 @@ Flamingo Journey is a small, self-contained web game: players hatch as a flaming
 
 ## Making the Game
 
-Flamingo Journey is built with React and Vite, and ships as an installable PWA — it can be added to a phone's home screen or a desktop like a native app, and works offline after the first visit.
+Flamingo Journey is built with React and Vite and published on GitHub Pages. It is an installable progressive web app, with device-based progress saving and optional Firebase authentication and cloud storage.
 
 <div class="wj-pipeline">
   <span>Species &amp; habitat research</span>
   <span class="pathway-arrow" aria-hidden="true">→</span>
-  <span>Bilingual content writing</span>
+  <span>Observation &amp; decision design</span>
   <span class="pathway-arrow" aria-hidden="true">→</span>
-  <span>Game state &amp; screens</span>
+  <span>Bilingual content</span>
   <span class="pathway-arrow" aria-hidden="true">→</span>
-  <span>Conservation-choice &amp; check mechanics</span>
+  <span>AI-assisted visual iteration</span>
   <span class="pathway-arrow" aria-hidden="true">→</span>
-  <span>Playable, installable web export</span>
+  <span>Implementation &amp; revision</span>
 </div>
+
+The revised game connects three seasonal decisions with a field journal, conservation feedback, and optional word practice. Each homeland has an independently saved expedition, allowing players to explore different habitats at their own pace.
 
 </section>
 
@@ -110,7 +127,21 @@ Flamingo Journey is built with React and Vite, and ships as an installable PWA �
 
 ## Reflection
 
-Flamingo Journey started from a simple question: what does it take for a factual, conservation-minded game to actually get played? The answer shaped most of the design — no sign-up wall, an offline-capable installable build, and content structured so the same game doubles as a light bilingual-vocabulary exercise.
+The redesign shifted Flamingo Journey from presenting information and checking answers toward asking players to observe, prioritize, and reconsider. Conservation became a continuing relationship between several habitat needs, rather than a single successful choice.
+
+The project also makes AI literacy part of the design process: evaluating generated material, documenting its use, and deciding when visual appeal or simplified mechanics need qualification. The intended learning experience is grounded in design choices; its educational effects still need to be examined through playtesting.
+
+Future playtesting could explore whether players understand the ecological trade-offs, find the bilingual presentation helpful, and carry their curiosity beyond the game.
+
+</section>
+
+<section class="reveal" markdown="1">
+
+## Sources and Credits
+
+Conservation references include [BirdLife International's flamingo overview](https://www.birdlife.org/birds/flamingo/), the [Natural History Museum's discussion of rising water levels and lesser flamingos](https://www.nhm.ac.uk/discover/news/2024/april/rising-water-levels-threaten-survival-lesser-flamingo.html), and the [San Diego Zoo Wildlife Alliance flamingo guide](https://animals.sandiegozoo.org/animals/flamingo).
+
+The featured wetland artwork was AI-generated and revised for this project. Species photographs are retained within the game. The illustrated landscape and habitat indicators are educational representations.
 
 <p class="section-cta"><a href="{{ '/flamingo-game/' | relative_url }}" target="_blank" rel="noopener">Play Flamingo Journey →</a></p>
 
