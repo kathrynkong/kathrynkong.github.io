@@ -23,11 +23,10 @@ title: Home
     </div>
   </a>
 
-  <a class="card card--narrative cm-card" href="{{ '/portfolio/#interactive-game-localization' | relative_url }}">
+  <a class="card card--narrative cm-card" href="https://kathrynkong.github.io/Critical-Making-Portfolio/Timeline.html" target="_blank" rel="noopener">
     <span class="cm-number">02</span>
-    <div class="card-image placeholder">
-      <span class="ph-icon">🖼️</span>
-      <span class="ph-caption">Image coming soon: Twine screenshot</span>
+    <div class="card-image">
+      <img src="{{ '/assets/critical-making/twine-cover-16x9.png' | relative_url }}" alt="Games Across Languages: illustrated cover art for the Twine project, showing a Game Boy dissolving into pixels, a ribbon linking cherry blossoms and a city skyline, and English/Japanese speech bubbles">
     </div>
     <span class="card-tag card-tag--narrative">Interactive Writing</span>
     <h3>✍️ Interactive Narrative &amp; Twine</h3>
