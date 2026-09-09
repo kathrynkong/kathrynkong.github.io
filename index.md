@@ -3,8 +3,6 @@ layout: default
 title: Home
 ---
 
-<p class="hero-intro reveal">I research, teach, and design at the intersection of <a class="keyword" href="{{ '/portfolio/#mato-anomalies' | relative_url }}">video games</a>, <a class="keyword" href="{{ '/portfolio/#ai-assisted-game-design' | relative_url }}">AI Literacy and AI Ethics</a>, <a class="keyword" href="{{ '/portfolio/#interactive-game-localization' | relative_url }}">digital storytelling</a>, <a class="keyword" href="{{ '/research/#games-localization--intercultural-communication' | relative_url }}">digital and intercultural communication</a>, and <a class="keyword" href="{{ '/portfolio/#game-based-learning-ux-research' | relative_url }}">technology-enhanced language learning</a>.</p>
-
 <div class="reveal" markdown="1">
 
 ## Featured Work
@@ -176,7 +174,5 @@ title: Home
 </section>
 
 <div class="closing-links reveal">
-  <a href="{{ '/about/' | relative_url }}">About</a>
   <a href="{{ '/cv/' | relative_url }}">CV</a>
-  <a href="{{ '/about/#contact' | relative_url }}">Contact</a>
 </div>

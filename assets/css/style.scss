@@ -5,13 +5,15 @@
 
 // Custom palette for a digital-media / interactive-research portfolio,
 // overriding jekyll-theme-cayman's defaults (must be set before the @import).
-$header-bg-color: #4338ca;
-$header-bg-color-secondary: #7c3aed;
+// Softer, dustier purples than the original saturated indigo/violet,
+// to match the muted mood carried elsewhere in the palette.
+$header-bg-color: #5b4f96;
+$header-bg-color-secondary: #8a72c4;
 // A deep dusty blue-charcoal pulled from the banner photo's background
 // tone, rather than a generic near-black, so headings read as part of
 // the same palette as the header artwork.
 $section-headings-color: #2f3b4a;
-$body-link-color: #4f46e5;
+$body-link-color: #6558a8;
 
 @import "jekyll-theme-cayman";
 
@@ -83,7 +85,7 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
     linear-gradient(180deg, rgba(24, 18, 46, 0.45) 0%, rgba(24, 18, 46, 0.2) 45%, rgba(24, 18, 46, 0.45) 100%),
     // a much lighter purple tint than before, so the banner still carries
     // the brand accent while reading as artwork rather than a color wash
-    linear-gradient(120deg, rgba(124, 58, 237, 0.22), rgba(67, 56, 202, 0.18)),
+    linear-gradient(120deg, rgba(138, 114, 196, 0.22), rgba(91, 79, 150, 0.18)),
     url('{{ "/assets/banner.png" | relative_url }}');
   background-position: center;
   background-repeat: no-repeat;
@@ -139,77 +141,80 @@ button,
 }
 
 // ---------------------------------------------------------------------
-// Paw easter egg (header)
+// Contact menu (header)
 // ---------------------------------------------------------------------
-.paw-easter-egg {
+.contact-toggle {
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
-  padding: 0.3rem 0.5rem;
-  font-size: 1.1rem;
-  line-height: 1;
-  color: inherit;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
-  opacity: 0.7;
-  transition: opacity 0.2s, background-color 0.2s;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
 }
 
-.paw-easter-egg:hover {
-  opacity: 1;
-  background: rgba(255, 255, 255, 0.18);
+.contact-toggle:hover,
+.contact-toggle[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.35);
 }
 
 .page-header {
   position: relative;
 }
 
-.paw-easter-egg-message {
+.contact-menu {
   position: absolute;
   top: 2.6rem;
   right: 0.75rem;
-  max-width: 14rem;
-  padding: 0.5rem 0.8rem;
-  font-size: 0.78rem;
-  color: $header-bg-color;
-  text-align: right;
-  background: #fff;
-  border-radius: 0.4rem;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
-  opacity: 0;
-  transform: translateY(-4px);
-  transition: opacity 0.3s, transform 0.3s;
-  pointer-events: none;
   z-index: 5;
+  display: flex;
+  flex-direction: column;
+  min-width: 9rem;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
-.paw-easter-egg-message.visible {
-  opacity: 1;
-  transform: translateY(0);
+// `display: flex` above wins over the browser default [hidden] rule
+// (author styles beat the UA stylesheet regardless of specificity), so
+// the hidden state needs to be spelled out explicitly.
+.contact-menu[hidden] {
+  display: none;
 }
 
-// ---------------------------------------------------------------------
-// Homepage hero intro line
-// ---------------------------------------------------------------------
-.hero-intro {
-  max-width: 42rem;
-  margin: 0 auto 2rem;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.keyword {
-  padding: 0 0.15em;
-  color: $header-bg-color-secondary;
+.contact-menu a {
+  padding: 0.4rem 0.6rem;
+  color: $section-headings-color;
+  font-size: 0.88rem;
   font-weight: 600;
-  border-radius: 0.2em;
-  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.15s, color 0.15s;
 }
 
-.keyword:hover {
+.contact-menu a:hover {
   color: $header-bg-color;
-  background: rgba(124, 58, 237, 0.12);
+  background: rgba(138, 114, 196, 0.1);
+  text-decoration: none;
+}
+
+// ---------------------------------------------------------------------
+// Header intersection line (moved from the homepage into the banner)
+// ---------------------------------------------------------------------
+.hero-intro-banner {
+  max-width: 34rem;
+  margin: 0.4rem auto 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.88);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 .section-cta {
@@ -231,7 +236,7 @@ button,
 .section-cta a:hover {
   text-decoration: none;
   transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(76, 29, 149, 0.28);
+  box-shadow: 0 8px 18px rgba(91, 79, 150, 0.28);
 }
 
 // Accent underline beneath a page's leading heading.
@@ -264,14 +269,14 @@ button,
   border: 1px solid $border-color;
   border-top: 4px solid #94a3b8;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 10px rgba(76, 29, 149, 0.06);
+  box-shadow: 0 2px 10px rgba(91, 79, 150, 0.06);
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .card:hover {
   text-decoration: none;
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(76, 29, 149, 0.18);
+  box-shadow: 0 10px 24px rgba(91, 79, 150, 0.18);
 }
 
 // Category colors, desaturated toward the banner's dusty palette rather
@@ -372,7 +377,7 @@ button,
   text-align: center;
   color: $header-bg-color-secondary;
   background-image: linear-gradient(160deg, #f5f3ff 0%, #ece5fb 100%);
-  border-bottom: 1px dashed rgba(124, 58, 237, 0.35);
+  border-bottom: 1px dashed rgba(138, 114, 196, 0.35);
   transition: transform 0.35s ease;
 }
 
@@ -421,7 +426,7 @@ button,
 .case-study .card-image.placeholder {
   aspect-ratio: 21 / 9;
   margin-bottom: 1rem;
-  border: 1px dashed rgba(124, 58, 237, 0.35);
+  border: 1px dashed rgba(138, 114, 196, 0.35);
   border-radius: 0.5rem;
 }
 
@@ -466,9 +471,9 @@ button,
   padding: 0.75rem 1rem;
   margin: 0.5rem 0 1rem;
   font-style: italic;
-  color: #6d28d9;
-  background: rgba(124, 58, 237, 0.06);
-  border-left: 3px solid rgba(124, 58, 237, 0.4);
+  color: #5b4f96;
+  background: rgba(138, 114, 196, 0.06);
+  border-left: 3px solid rgba(138, 114, 196, 0.4);
   border-radius: 0 0.3rem 0.3rem 0;
 }
 
@@ -547,14 +552,14 @@ button,
   font-weight: 600;
   letter-spacing: 0.04em;
   color: $header-bg-color;
-  background: rgba(124, 58, 237, 0.07);
-  border: 1px solid rgba(124, 58, 237, 0.25);
+  background: rgba(138, 114, 196, 0.07);
+  border: 1px solid rgba(138, 114, 196, 0.25);
   border-radius: 999px;
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .pathway-node:hover {
-  background: rgba(124, 58, 237, 0.14);
+  background: rgba(138, 114, 196, 0.14);
 }
 
 .pathway-node.active {
@@ -612,7 +617,7 @@ button,
   font-size: 0.85rem;
   font-weight: 700;
   color: #fff;
-  background: rgba(67, 56, 202, 0.85);
+  background: rgba(91, 79, 150, 0.85);
   border-radius: 999px;
 }
 
@@ -671,7 +676,7 @@ button,
   font-size: 1.3rem;
   font-style: italic;
   color: $header-bg-color;
-  background: rgba(124, 58, 237, 0.06);
+  background: rgba(138, 114, 196, 0.06);
   border-left: 3px solid $header-bg-color-secondary;
   border-radius: 0 0.5rem 0.5rem 0;
 }
@@ -706,7 +711,7 @@ button,
 }
 
 .scholarship-item:hover {
-  box-shadow: 0 6px 18px rgba(76, 29, 149, 0.1);
+  box-shadow: 0 6px 18px rgba(91, 79, 150, 0.1);
 }
 
 .scholarship-item h3 {
