@@ -7,7 +7,7 @@
 // overriding jekyll-theme-cayman's defaults (must be set before the @import).
 $header-bg-color: #4338ca;
 $header-bg-color-secondary: #7c3aed;
-$section-headings-color: #4338ca;
+$section-headings-color: #111827;
 $body-link-color: #4f46e5;
 
 @import "jekyll-theme-cayman";
@@ -75,7 +75,12 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
 // ---------------------------------------------------------------------
 .page-header {
   background-image:
-    linear-gradient(120deg, rgba(124, 58, 237, 0.82), rgba(67, 56, 202, 0.82)),
+    // a light scrim (stronger where nav/name text sits, at top and bottom)
+    // keeps text legible without hiding the cat photo underneath it
+    linear-gradient(180deg, rgba(24, 18, 46, 0.45) 0%, rgba(24, 18, 46, 0.2) 45%, rgba(24, 18, 46, 0.45) 100%),
+    // a much lighter purple tint than before, so the banner still carries
+    // the brand accent while reading as artwork rather than a color wash
+    linear-gradient(120deg, rgba(124, 58, 237, 0.22), rgba(67, 56, 202, 0.18)),
     url('{{ "/assets/banner.png" | relative_url }}');
   background-position: center;
   background-repeat: no-repeat;
@@ -254,7 +259,7 @@ button,
   text-decoration: none;
   background: #fff;
   border: 1px solid $border-color;
-  border-top: 4px solid $header-bg-color-secondary;
+  border-top: 4px solid #94a3b8;
   border-radius: 0.5rem;
   box-shadow: 0 2px 10px rgba(76, 29, 149, 0.06);
   transition: box-shadow 0.2s, transform 0.2s;
@@ -322,8 +327,8 @@ button,
   font-size: 0.72rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $header-bg-color-secondary;
-  background: rgba(124, 58, 237, 0.08);
+  color: #475569;
+  background: rgba(100, 116, 139, 0.1);
   border-radius: 999px;
 }
 
