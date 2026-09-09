@@ -37,18 +37,17 @@ title: Home
     </div>
   </a>
 
-  <a class="card card--research cm-card" href="{{ '/portfolio/#game-based-learning-ux-research' | relative_url }}">
+  <a class="card card--creative cm-card" href="https://kathrynkong.github.io/AI_Portfolio/game/index.html" target="_blank" rel="noopener">
     <span class="cm-number">03</span>
-    <div class="card-image placeholder">
-      <span class="ph-icon">🖼️</span>
-      <span class="ph-caption">Image coming soon: ELLE screenshot</span>
+    <div class="card-image">
+      <img src="{{ '/assets/ai-portfolio/cat-game-16x9.png' | relative_url }}" alt="Three pastel-colored doors and three cats from the procedural cat game">
     </div>
-    <span class="card-tag card-tag--research">Research / UX</span>
-    <h3>🎮 Game-Based Learning &amp; UX</h3>
-    <p>ELLE — The EndLess Learner: evaluating game-based and immersive language-learning experiences through UX research.</p>
+    <span class="card-tag card-tag--creative">Procedural Game Design &amp; Creative Coding</span>
+    <h3>🐱 Cats, Riddles &amp; Procedural Play</h3>
+    <p>A state-based microgame where player choices change character moods, dynamically shaping dialogue, riddles, and rewards across playthroughs.</p>
     <div class="card-hover-info">
-      See how UX research shapes game-based learning tools.
-      <span class="view-case-study">View case study →</span>
+      See how a small state machine turns clicks into shifting dialogue and riddles.
+      <span class="view-case-study">Play the game →</span>
     </div>
   </a>
 
