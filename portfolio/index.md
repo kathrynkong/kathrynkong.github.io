@@ -13,7 +13,7 @@ What I've made, designed, and tested — spanning professional localization, pla
 
   <a class="card card--immersive cm-card" href="{{ '/flamingo-journey/' | relative_url }}">
     <div class="card-image">
-      <img src="{{ '/assets/flamingo-journey/flamingo.png' | relative_url }}" alt="Flamingo Journey species-selection screen, showing a Chilean Flamingo card">
+      <img src="{{ '/flamingo-game/art/wetland-fresh.png' | relative_url }}" alt="Illustrated flamingo wetland from the revised Flamingo Journey game">
     </div>
     <span class="card-tag card-tag--immersive">Bilingual Interactive Learning</span>
     <h3>🦩 Flamingo Conservation Game</h3>
