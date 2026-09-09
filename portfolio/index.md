@@ -5,7 +5,7 @@ title: Portfolio
 
 # Portfolio
 
-What I've made, designed, and tested — spanning professional localization, playable interactive-media projects, and research prototypes. Sections marked "Content coming soon" are placeholders being actively filled in.
+What I've researched, designed and presented.
 
 ## Interactive Media & Game Design
 
