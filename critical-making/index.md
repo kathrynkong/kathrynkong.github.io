@@ -61,7 +61,7 @@ description: Twine, Bitsy, Tracery, p5.js, and React — a collection of creativ
   <a class="card card--research cm-card" href="{{ '/flamingo-journey/' | relative_url }}">
     <span class="cm-number">05</span>
     <div class="card-image">
-      <img src="{{ '/assets/flamingo-journey/thumbnail.png' | relative_url }}" alt="Flamingo Journey species-selection screen, showing a Chilean Flamingo card">
+      <img src="{{ '/flamingo-game/art/wetland-fresh.png' | relative_url }}" alt="Illustrated flamingo wetland from the revised Flamingo Journey game">
     </div>
     <span class="card-tag card-tag--research">Game-Based Learning</span>
     <h3>Flamingo Journey</h3>
