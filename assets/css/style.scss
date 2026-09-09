@@ -90,11 +90,18 @@ $display-font: "Fraunces", Georgia, "Times New Roman", serif;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  // more compact than the theme's default (5rem/3rem/2rem top-bottom by
+  // breakpoint) now that the banner carries more lines of content.
+  padding: 2.25rem 2rem 1.75rem;
 }
 
 .project-name,
 .project-tagline {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.project-tagline {
+  margin-bottom: 0.6rem;
 }
 
 // ---------------------------------------------------------------------
@@ -141,45 +148,70 @@ button,
 }
 
 // ---------------------------------------------------------------------
-// Contact menu (header)
+// Header intersection line (moved from the homepage into the banner)
 // ---------------------------------------------------------------------
-.contact-toggle {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
+.hero-intro-banner {
+  max-width: 68rem;
+  margin: 0.2rem auto 0;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.88);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+// ---------------------------------------------------------------------
+// Header icon row: Google Scholar + Contact menu
+// ---------------------------------------------------------------------
+.header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.6rem 0 0;
+}
+
+.header-icon-link {
+  display: inline-block;
   padding: 0.35rem 0.9rem;
+  font-family: inherit;
   font-size: 0.85rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
+  text-decoration: none;
   cursor: pointer;
   transition: background-color 0.2s, border-color 0.2s;
 }
 
-.contact-toggle:hover,
-.contact-toggle[aria-expanded="true"] {
+.header-icon-link:hover,
+.header-icon-link[aria-expanded="true"] {
   background: rgba(255, 255, 255, 0.22);
   border-color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
 }
 
-.page-header {
+.contact-wrapper {
   position: relative;
+  display: inline-block;
 }
 
 .contact-menu {
   position: absolute;
-  top: 2.6rem;
-  right: 0.75rem;
+  top: 100%;
+  left: 50%;
   z-index: 5;
   display: flex;
   flex-direction: column;
   min-width: 9rem;
+  margin-top: 0.5rem;
   padding: 0.5rem;
   background: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  transform: translateX(-50%);
 }
 
 // `display: flex` above wins over the browser default [hidden] rule
@@ -203,18 +235,6 @@ button,
   color: $header-bg-color;
   background: rgba(138, 114, 196, 0.1);
   text-decoration: none;
-}
-
-// ---------------------------------------------------------------------
-// Header intersection line (moved from the homepage into the banner)
-// ---------------------------------------------------------------------
-.hero-intro-banner {
-  max-width: 34rem;
-  margin: 0.4rem auto 0;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.88);
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 .section-cta {
