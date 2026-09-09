@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<p class="hero-intro reveal">I research, teach, and design at the intersection of <a class="keyword" href="{{ '/portfolio/#mato-anomalies' | relative_url }}">video games</a>, <a class="keyword" href="{{ '/portfolio/#ai-assisted-game-design' | relative_url }}">artificial intelligence</a>, <a class="keyword" href="{{ '/portfolio/#interactive-game-localization' | relative_url }}">interactive storytelling</a>, <a class="keyword" href="{{ '/research/#games-localization--intercultural-communication' | relative_url }}">digital and intercultural communication</a>, and <a class="keyword" href="{{ '/portfolio/#game-based-learning-ux-research' | relative_url }}">technology-enhanced language learning</a>.</p>
+<p class="hero-intro reveal">I research, teach, and design at the intersection of <a class="keyword" href="{{ '/portfolio/#mato-anomalies' | relative_url }}">video games</a>, <a class="keyword" href="{{ '/portfolio/#ai-assisted-game-design' | relative_url }}">AI Literacy and AI Ethics</a>, <a class="keyword" href="{{ '/portfolio/#interactive-game-localization' | relative_url }}">digital storytelling</a>, <a class="keyword" href="{{ '/research/#games-localization--intercultural-communication' | relative_url }}">digital and intercultural communication</a>, and <a class="keyword" href="{{ '/portfolio/#game-based-learning-ux-research' | relative_url }}">technology-enhanced language learning</a>.</p>
 
 <div class="reveal" markdown="1">
 
@@ -14,7 +14,7 @@ title: Home
   <a class="card card--immersive cm-card" href="{{ '/flamingo-journey/' | relative_url }}">
     <span class="cm-number">01</span>
     <div class="card-image">
-      <img src="{{ '/assets/flamingo-journey/thumbnail.png' | relative_url }}" alt="Flamingo Journey species-selection screen, showing a Chilean Flamingo card">
+      <img src="{{ '/assets/flamingo-journey/flamingo.png' | relative_url }}" alt="Flamingo Journey species-selection screen, showing a Chilean Flamingo card">
     </div>
     <span class="card-tag card-tag--immersive">Multilingual Interactive Learning</span>
     <h3>🦩 Flamingo Conservation Game</h3>
