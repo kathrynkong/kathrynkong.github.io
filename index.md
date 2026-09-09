@@ -16,7 +16,7 @@ title: Home
     </div>
     <span class="card-tag card-tag--immersive">Bilingual Interactive Learning</span>
     <h3>🦩 Flamingo Conservation Game</h3>
-    <p>A bilingual web game about flamingo species, habitats, and conservation — installable as an app, playable with no account.</p>
+    <p>A bilingual web game about flamingo species, habitats, and conservation, playable with no account.</p>
     <div class="card-hover-info">
       See how bilingual game design turns conservation facts into a personal stake.
       <span class="view-case-study">View case study →</span>
@@ -28,7 +28,7 @@ title: Home
     <div class="card-image">
       <img src="{{ '/assets/critical-making/twine-cover-16x9.png' | relative_url }}" alt="Games Across Languages: illustrated cover art for the Twine project, showing a Game Boy dissolving into pixels, a ribbon linking cherry blossoms and a city skyline, and English/Japanese speech bubbles">
     </div>
-    <span class="card-tag card-tag--narrative">Interactive Writing</span>
+    <span class="card-tag card-tag--narrative">Digital Storytelling & Game Localization</span>
     <h3>✍️ Interactive Narrative &amp; Twine</h3>
     <p>Twine-based interactive narrative and localization experiments.</p>
     <div class="card-hover-info">
