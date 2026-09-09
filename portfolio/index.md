@@ -21,13 +21,13 @@ What I've researched, designed and presented.
     <span class="cm-cta">Read Case Study →</span>
   </a>
 
-  <a class="card card--narrative cm-card" id="interactive-game-localization" href="https://kathrynkong.github.io/Critical-Making-Portfolio/CriticalMaking.html" target="_blank" rel="noopener">
+  <a class="card card--narrative cm-card" id="interactive-game-localization" href="https://kathrynkong.github.io/Critical-Making-Portfolio/Timeline.html" target="_blank" rel="noopener">
     <div class="card-image">
       <img src="{{ '/assets/critical-making/twine.png' | relative_url }}" alt="Opening passage of a Twine hypertext story">
     </div>
-    <span class="card-tag card-tag--narrative">Interactive Narrative</span>
-    <h3>Twine Interactive Narrative</h3>
-    <p>An interactive hypertext built in Twine, exploring branching narrative structure and localization decisions.</p>
+    <span class="card-tag card-tag--narrative">Twine Interactive Narrative</span>
+    <h3>Digital Exploration of Game Localization</h3>
+    <p>An interactive hypertext built in Twine, exploring the history of game localization.</p>
     <span class="cm-cta">Launch Project →</span>
   </a>
 
