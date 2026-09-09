@@ -14,7 +14,7 @@ I have held a Graduate Research Assistantship at UCF's Center for Humanities and
 
 I study second-language learning across both formal and informal contexts, including game-based learning, immersive media, online fandom, and digital communities.
 
-- **Dissertation** — *Agentic by Design: A Needs-Driven GenAI System Design Study for Game-Based Language Education in Higher Education.* Doctoral dissertation (in progress), University of Central Florida.
+- **[Dissertation]({{ "/portfolio/#ai-agentic-game-design" | relative_url }})** — *Agentic by Design: A Needs-Driven GenAI System Design Study for Game-Based Language Education in Higher Education.* Doctoral dissertation (in progress), University of Central Florida.
 
 **Related Publications & Presentations**
 

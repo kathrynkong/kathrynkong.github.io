@@ -41,6 +41,17 @@ What I've researched, designed and presented.
     <span class="cm-cta">Play the Game →</span>
   </a>
 
+  <a class="card card--ai cm-card" href="{{ '/portfolio/#ai-agentic-game-design' | relative_url }}">
+    <div class="card-image placeholder">
+      <span class="ph-icon">🖼️</span>
+      <span class="ph-caption">Image coming soon</span>
+    </div>
+    <span class="card-tag card-tag--ai">Dissertation Project - Ongoing</span>
+    <h3>🤖 AI Agentic Game Design</h3>
+    <p>A Needs-Driven GenAI System Design Study for Game-Based Language Education in Higher Education.</p>
+    <span class="cm-cta">Read the Intro →</span>
+  </a>
+
 </div>
 
 ## Professional Practice
@@ -134,18 +145,69 @@ See the [Research]({{ "/research/" | relative_url }}) page for the academic fram
 
 </div>
 
-<div class="case-study" id="ai-assisted-game-design" markdown="1">
+<div class="case-study" id="ai-agentic-game-design" markdown="1">
 
-<span class="status-badge coming-soon">Content coming soon</span>
+<span class="status-badge live">In Progress</span>
 
-## AI-Assisted Game Design
-{: #ai-assisted-game-design-heading}
+## AI Agentic Game Design
+{: #ai-agentic-game-design-heading}
+
+<div class="case-meta">
+<strong>Project:</strong> Agentic by Design: A Needs-Driven GenAI System Design Study for Game-Based Language Education in Higher Education<br>
+<strong>Program:</strong> Texts and Technology Ph.D. Program, University of Central Florida<br>
+<strong>Status:</strong> Doctoral dissertation (in progress)
+</div>
 
 <div class="card-image placeholder">
   <span class="ph-icon">🖼️</span>
-  <span class="ph-caption">Image coming soon: AI workflow / prototype screenshot</span>
+  <span class="ph-caption">Image coming soon: agentic workflow diagram</span>
 </div>
 
-<span class="fill-me">Describe how you've used generative AI in game or learning-content design workflows: the tools, the process, and an example output.</span>
+**The Problem**
+
+- **Quality Gap** — Effective game-based learning (GBL) requires more than adding game elements.
+- **Translation Gap** — Language instructors know their needs, but not always how to translate them into game design.
+- **Design Support Gap** — General-purpose GenAI tools need structured pedagogical guidance.
+
+<p class="wj-question">How can a GenAI-assisted design tool support university language instructors in developing game-based learning activities that address their documented instructional needs?</p>
+
+**Theoretical Framework**
+
+1. **Needs Analysis** — Documented instructional needs; teaching contexts, constraints, and priorities; design requirements for activity design. *(West, 1994)*
+2. **GBL + SLA Principles** — Learning goals embedded in gameplay; mechanics, feedback, interaction, and narrative; meaningful communication and output. *(Swain, 1985; Long, 1996; Reinhardt &amp; Sykes, 2012; Godwin-Jones, 2014)*
+3. **GenAI-Assisted Instructional Design** — Translates needs into design through a structured, traceable, revisable workflow that supports rather than replaces instructor judgment. *(Kohnke et al., 2023; Lee et al., 2026)*
+
+**Methodology — A Two-Phase Needs-Driven Design Study**
+
+<div class="wj-pipeline">
+  <span>Phase 1: Needs Analysis</span>
+  <span class="pathway-arrow" aria-hidden="true">→</span>
+  <span>Phase 2: Agentic System Design</span>
+</div>
+
+- **Phase 1 — Needs Analysis** ("What do instructors need?") — Survey and interviews with university language instructors; identify instructional bottlenecks, constraints, and priorities; synthesize documented needs into design requirements. *(West, 1994)*
+- **Phase 2 — Agentic System Design** ("How can the tool translate needs into GBL design?") — Build a needs-to-design workflow for GenAI-assisted recommendations; map needs to game type, mechanics, narrative, and social configuration; generate 1–2 illustrative GBL activity cases as proof of concept. *(Amershi et al., 2019; GBL/SLA design literature)*
+
+*Scope: illustrative game cases demonstrate the system's design logic, not presented as a full implementation or effectiveness evaluation.*
+
+**Proposed AI Agentic System Workflow**
+
+From documented instructional needs to structured game-based learning activity designs:
+
+<div class="wj-pipeline">
+  <span>Instructional Context Consultant</span>
+  <span class="pathway-arrow" aria-hidden="true">→</span>
+  <span>Game Design Specification Agent</span>
+  <span class="pathway-arrow" aria-hidden="true">→</span>
+  <span>Template Matching Agent</span>
+</div>
+
+- **Instructional Context Consultant** — Interprets instructor-provided goals and constraints, identifies GBL design requirements, and considers skill, proficiency, context, and constraints to recommend a game type and core mechanics. → *Output: Design brief*
+- **Game Design Specification Agent** — Maps requirements to mechanics, narrative, feedback, and social configuration; generates a JSON game design specification; flags unresolved design decisions for the instructor. → *Output: Traceable design logic*
+- **Template Matching Agent** — Matches the specification to a template category, adjusts difficulty, content, and classroom fit, and revises the output before approving the final activity design. → *Output: Curated template library*
+
+*Workflow can be orchestrated through n8n or a similar agentic automation system.*
+
+See the [Research]({{ "/research/" | relative_url }}) page for the academic framing of this dissertation project.
 
 </div>
