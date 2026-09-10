@@ -46,7 +46,7 @@ What I've researched, designed and presented.
       <img src="{{ '/portfolio/aiagentic.png' | relative_url }}" alt="Project description">
     </div>
     <span class="card-tag card-tag--ai">Dissertation Project - Ongoing</span>
-    <h3>🤖 AI Agentic Game Design</h3>
+    <h3>🤖 Agentic AI System Design</h3>
     <p>A Needs-Driven GenAI System Design Study for Game-Based Language Education in Higher Education.</p>
     <span class="cm-cta">Read the Intro →</span>
   </a>
@@ -82,7 +82,10 @@ Mato Anomalies is a narrative-driven RPG blending turn-based combat, dungeon exp
 
 **Localization Challenge**
 
-<span class="fill-me">Add one concrete, non-NDA example of a localization decision you made and why — e.g. adapting a pun, handling a character's voice, or resolving a cultural reference.</span>
+<span class="fill-me">•	Specialized in translating and localizing gaming content, developing an understanding of UX and service design principles.
+•	Conducted research to inform content adaptation, ensuring cultural relevance and user engagement.
+<img width="468" height="71" alt="image" src="https://github.com/user-attachments/assets/1428c166-1917-48af-9181-77e66f169871" />
+.</span>
 
 **Why It Matters**
 
@@ -148,8 +151,8 @@ See the [Research]({{ "/research/" | relative_url }}) page for the academic fram
 
 <span class="status-badge live">In Progress</span>
 
-## AI Agentic Game Design
-{: #ai-agentic-game-design-heading}
+## Agentic AI System Design
+{: #ai-agentic-system-design-heading}
 
 <div class="case-meta">
 <strong>Project:</strong> Agentic by Design: A Needs-Driven GenAI System Design Study for Game-Based Language Education in Higher Education<br>
