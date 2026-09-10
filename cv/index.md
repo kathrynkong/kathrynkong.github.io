@@ -9,6 +9,14 @@ title: My Personal CV
 
 **EDUCATION**
 
+**University of Central Florida (UCF)** Orlando, Florida
+
+PhD Candidate, Texts and Technology 2023.08-2027.05
+
+Dissertation: *Agentic by Design: A Needs-Driven GenAI System Design Study for Game-Based Language Education in Higher Education*
+
+Advisor: Emily K. Johnson
+
 **Hankuk University of Foreign Studies (HUFS)** Seoul, Republic of Korea
 
 M.A., Translation Studies 2020.03-2022.08
