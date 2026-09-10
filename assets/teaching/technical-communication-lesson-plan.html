@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Lesson Plan — Technical Communication</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --ink-muted: #5a5a5a;
+    --ink-faint: #9a9a9a;
+    --surface: #faf9f6;
+    --surface-2: #f0ede6;
+    --surface-3: #e4e0d8;
+    --accent: #2a4d6e;
+    --accent-light: #e8eff5;
+    --accent-mid: #4a7fa8;
+    --gold: #b8860b;
+    --gold-light: #fdf8ec;
+    --teal: #1d6e5b;
+    --teal-light: #e8f4f1;
+    --rust: #8b3a2a;
+    --rust-light: #faf0ee;
+    --border: #d8d4cc;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* HEADER */
+  .hero {
+    background: var(--accent);
+    color: #fff;
+    padding: 3.5rem 3rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -80px;
+    width: 340px; height: 340px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 40%;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+  .hero-tag {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 1rem;
+  }
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+    position: relative;
+    z-index: 1;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: #aac8e0;
+  }
+
+  .meta-strip {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    position: relative;
+    z-index: 1;
+  }
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .meta-item .label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+  .meta-item .value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  /* LAYOUT */
+  .page {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 3rem 2.5rem;
+  }
+
+  .section {
+    margin-bottom: 3rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1.5px solid var(--border);
+  }
+  .section-num {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    min-width: 2rem;
+  }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--ink);
+  }
+
+  .prose p { color: var(--ink); margin-bottom: 0.75rem; }
+  .prose p:last-child { margin-bottom: 0; }
+
+  /* OBJECTIVE CALLOUT */
+  .objective-box {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .objective-box p {
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+  .bloom-badge {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 3px 12px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 20px;
+  }
+
+  /* TAGS ROW */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 0.5rem;
+  }
+  .tag {
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .tag-default { background: var(--surface-2); color: var(--ink-muted); border: 1px solid var(--border); }
+  .tag-gold { background: var(--gold-light); color: var(--gold); border: 1px solid #e8d08a; }
+  .tag-teal { background: var(--teal-light); color: var(--teal); border: 1px solid #9fd3c7; }
+  .tag-accent { background: var(--accent-light); color: var(--accent); border: 1px solid #a8c4d8; }
+  .tag-rust { background: var(--rust-light); color: var(--rust); border: 1px solid #d4a89a; }
+
+  /* FRAMEWORK CARD */
+  .framework-card {
+    background: var(--gold-light);
+    border: 1px solid #e8d08a;
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+  .framework-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+  .framework-card p {
+    color: #6b5a1e;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  /* LESSON SEQUENCE TABLE */
+  .sequence-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .sequence-table thead tr {
+    background: var(--accent);
+    color: #fff;
+  }
+  .sequence-table thead th {
+    padding: 10px 16px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .sequence-table tbody tr {
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .sequence-table tbody tr:nth-child(even) { background: var(--surface-2); }
+  .sequence-table tbody tr:hover { background: var(--accent-light); }
+  .sequence-table td {
+    padding: 12px 16px;
+    line-height: 1.6;
+  }
+  .phase-badge {
+    display: inline-block;
+    padding: 2px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+  }
+  .phase-a { background: var(--accent-light); color: var(--accent); }
+  .phase-r { background: var(--gold-light); color: var(--gold); }
+  .phase-c { background: var(--teal-light); color: var(--teal); }
+  .phase-s { background: var(--rust-light); color: var(--rust); }
+  .time-cell { font-weight: 500; color: var(--ink-muted); white-space: nowrap; }
+
+  /* ACTIVITY CARDS */
+  .activity-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+  @media (max-width: 640px) { .activity-grid { grid-template-columns: 1fr; } }
+
+  .activity-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.4rem;
+    background: var(--surface);
+  }
+  .activity-card .act-num {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 0.4rem;
+  }
+  .activity-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 0.6rem;
+  }
+  .activity-card p { font-size: 14px; color: var(--ink-muted); line-height: 1.65; }
+  .activity-card .obj-link {
+    margin-top: 0.75rem;
+    font-size: 12px;
+    color: var(--accent-mid);
+    font-weight: 500;
+  }
+
+  /* ASSESSMENT */
+  .assess-block {
+    background: var(--teal-light);
+    border: 1px solid #9fd3c7;
+    border-radius: 10px;
+    padding: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .assess-block h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--teal);
+    margin-bottom: 0.4rem;
+  }
+  .assess-block p { font-size: 14px; color: #1a4d40; line-height: 1.65; }
+
+  /* MATERIALS */
+  .materials-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .materials-list li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 10px 14px;
+    background: var(--surface-2);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--ink);
+  }
+  .mat-icon {
+    font-size: 15px;
+    margin-top: 1px;
+    flex-shrink: 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 2.5rem;
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .footer p { font-size: 12px; color: var(--ink-faint); }
+
+  @media print {
+    .hero { background: #2a4d6e !important; -webkit-print-color-adjust: exact; }
+    body { background: #fff; }
+  }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--accent-mid); outline-offset: 4px; }
+.section-title { line-height:1.3; }
+.table-scroll { overflow-x:auto; }
+@media(max-width:640px) { .hero { padding:2rem 1.25rem; } .hero h1 { font-size:2.2rem; } .page { padding:2rem 1.25rem; } .meta-strip { gap:1rem; } .sequence-table { min-width:650px; } }
+@media print { .table-scroll { overflow:visible; } .sequence-table { min-width:0; } .activity-card,.assess-block { break-inside:avoid; } }
+</style>
+</head>
+<body>
+
+<!-- HERO HEADER -->
+<div class="hero">
+  <p class="hero-tag">Preparing Tomorrow's Faculty · Spring 2026 · Sample Lesson Plan</p>
+  <h1>Introduction to<br><em>Technical Communication</em></h1>
+
+  <div class="meta-strip">
+    <div class="meta-item">
+      <span class="label">Subject Area</span>
+      <span class="value">Technical Communication</span>
+    </div>
+    <div class="meta-item">
+      <span class="label">Level</span>
+      <span class="value">Undergraduate</span>
+    </div>
+    <div class="meta-item">
+      <span class="label">Intended Class Size</span>
+      <span class="value">25 Students</span>
+    </div>
+    <div class="meta-item">
+      <span class="label">Planned Duration</span>
+      <span class="value">3 Hours (180 min)</span>
+    </div>
+    <div class="meta-item">
+      <span class="label">Framework</span>
+      <span class="value">Keller's ARCS Model</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="page">
+<p style="margin-bottom:2rem"><a href="/teaching/#sample-teaching-materials">← Back to Teaching</a></p>
+<div class="objective-box"><p><strong>Designed by Yingzi (Kathryn) Kong</strong> for UCF’s Preparing Tomorrow’s Faculty program, Spring 2026. This sample plan describes an intended undergraduate teaching setting; it is presented as evidence of instructional design, without claiming classroom implementation or measured learning outcomes.</p></div>
+
+  <!-- SECTION 1: LEARNING OBJECTIVE -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Learning Objective</h2>
+    </div>
+    <div class="objective-box">
+      <p>By the end of the lesson, students will be able to:</p><ol style="padding-left:1.5rem;color:var(--accent)"><li><strong>Define</strong> technical communication in their own words, identifying its audience, purpose, and practical use.</li><li><strong>Analyze</strong> a technical document by explaining how at least three features support or limit its purpose for the intended audience.</li><li><strong>Evaluate</strong> audience needs in a communication scenario and justify a document format and tone using at least two needs supported by the scenario.</li></ol>
+      <span class="bloom-badge">Bloom's Levels: Remember · Analyze · Evaluate</span>
+    </div>
+    <div class="tags">
+      <span class="tag tag-accent">Define</span>
+      <span class="tag tag-gold">Analyze</span>
+      <span class="tag tag-teal">Evaluate</span>
+      <span class="tag tag-default">Taxonomy Levels 1, 4 &amp; 5</span>
+    </div>
+  </div>
+
+  <!-- SECTION 2: PREREQUISITE KNOWLEDGE -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Prerequisite Knowledge</h2>
+    </div>
+    <div class="prose">
+      <p>Before this lesson, students should be able to:</p>
+    </div>
+    <div class="tags" style="margin-top: 0.75rem; gap: 10px;">
+      <span class="tag tag-default">Read and interpret general non-fiction texts</span>
+      <span class="tag tag-default">Basic familiarity with document types (email, report, instructions)</span>
+      <span class="tag tag-default">Awareness of different professional contexts</span>
+      <span class="tag tag-default">Introductory understanding of audience and purpose in writing</span>
+    </div>
+  </div>
+
+  <!-- SECTION 3: FRAMEWORK APPLICATION -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Framework Application</h2>
+    </div>
+    <div class="framework-card">
+      <h3>Keller's ARCS Model of Motivational Design</h3>
+      <p>ARCS is selected because this is an introductory lesson where students may not yet see the relevance of technical communication to their lives. The model's explicit focus on <em>motivation</em> — capturing Attention, establishing Relevance, building Confidence, and creating Satisfaction — is designed to help students move from "why does this matter?" to "I can do this, and it matters to me." By opening with relatable real-world examples and scaffolding complexity gradually, the lesson aims to build confidence and engagement before more demanding analysis tasks. Attention, Relevance, Confidence, and Satisfaction are overlapping design considerations used throughout the lesson; the table identifies an emphasis, not a required sequence or a guarantee of motivation.</p>
+    </div>
+  </div>
+
+  <!-- SECTION 4: LESSON SEQUENCE -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Lesson Sequence</h2>
+    </div>
+
+    <div class="table-scroll" role="region" aria-label="180-minute lesson sequence" tabindex="0"><table class="sequence-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>ARCS Emphasis</th>
+          <th>Topic / Activity</th>
+          <th>Materials</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="time-cell">0–15 min</td>
+          <td><span class="phase-badge phase-a">Attention</span></td>
+          <td><strong>Hook — When Communication Goes Wrong</strong><br>Compare two instructor-prepared versions of instructions for submitting a class assignment: one vague paragraph and one numbered guide with clear labels and a confirmation step. Ask: "Which version would help a first-time user complete the task, and what evidence supports your choice?"</td>
+          <td>Slides, two instruction examples</td>
+        </tr>
+        <tr>
+          <td class="time-cell">15–25 min</td>
+          <td><span class="phase-badge phase-a">Attention</span></td>
+          <td><strong>Inform learners of objectives</strong><br>Share today's three learning targets. Connect each to a real career moment (engineer writing a report, nurse filling out a form, developer writing documentation).</td>
+          <td>Slides</td>
+        </tr>
+        <tr>
+          <td class="time-cell">25–45 min</td>
+          <td><span class="phase-badge phase-r">Relevance</span></td>
+          <td><strong>Mini-Lecture — What is Technical Communication?</strong><br>Cover the definition, key characteristics (clarity, audience focus, accuracy, usability), and the spectrum of document types. Use examples from multiple fields: medical, legal, engineering, tech.</td>
+          <td>Slides, handout</td>
+        </tr>
+        <tr>
+          <td class="time-cell">45–70 min</td>
+          <td><span class="phase-badge phase-r">Relevance</span></td>
+          <td><strong>Activity 1 — Document Deep Dive (Small Groups)</strong><br>Groups of 4–5 receive a packet of 4 different technical documents. They analyze each using a guided worksheet: identify the document type, intended audience, key characteristics, and purpose. Groups share one finding with the class.</td>
+          <td>Document packets, guided worksheet</td>
+        </tr>
+        <tr>
+          <td class="time-cell">70–80 min</td>
+          <td><span class="phase-badge phase-r">Relevance</span></td>
+          <td><strong>Break</strong><br>10-minute break. No task is required during the break.</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td class="time-cell">80–110 min</td>
+          <td><span class="phase-badge phase-c">Confidence</span></td>
+          <td><strong>Mini-Lecture — Audience Analysis</strong><br>Introduce the concept of audience: primary vs. secondary readers, expert vs. lay audiences, cultural considerations. Walk through a structured audience analysis framework step by step. Model the process using a sample scenario.</td>
+          <td>Slides, sample scenario handout</td>
+        </tr>
+        <tr>
+          <td class="time-cell">110–145 min</td>
+          <td><span class="phase-badge phase-c">Confidence</span></td>
+          <td><strong>Activity 2 — Audience Evaluation Scenarios (Pairs)</strong><br>Pairs receive a communication scenario card and must: (1) identify the audience, (2) list audience needs and expectations, (3) recommend an appropriate document type and tone. Instructor circulates to provide real-time feedback. Pairs justify their recommendations using two scenario details, then swap cards for a second round. With 25 students, use 11 pairs and one group of three.</td>
+          <td>Scenario cards (10 scenarios), worksheet</td>
+        </tr>
+        <tr>
+          <td class="time-cell">145–160 min</td>
+          <td><span class="phase-badge phase-c">Confidence</span></td>
+          <td><strong>Check for Understanding — Gallery Walk</strong><br>Post 5 "mystery documents" around the room. Students use sticky notes or an accessible digital worksheet to identify document type, intended audience, and one feature with an explanation of its usefulness. A seated document packet provides the same task. Class discusses patterns and discrepancies.</td>
+          <td>Printed mystery docs, sticky notes, markers</td>
+        </tr>
+        <tr>
+          <td class="time-cell">160–170 min</td>
+          <td><span class="phase-badge phase-s">Satisfaction</span></td>
+          <td><strong>Debrief &amp; Real-World Transfer</strong><br>Instructor leads discussion: "Where will you use this? What does a technical communicator in your field actually do?" Students share one example from their own major or career interest. Build a class "living example list" on the whiteboard.</td>
+          <td>Whiteboard, markers</td>
+        </tr>
+        <tr>
+          <td class="time-cell">170–180 min</td>
+          <td><span class="phase-badge phase-s">Satisfaction</span></td>
+          <td><strong>Exit Task + Preview of Next Lesson</strong><br>Students complete a three-part exit task: define technical communication; explain one feature of a supplied document; and justify a format and tone for a brief audience scenario using two stated needs. Preview Week 7: Writing Audience-Centered Documents.</td>
+          <td>Exit ticket card (print or digital)</td>
+        </tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <!-- SECTION 5: STUDENT ACTIVITIES -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Student Activities</h2>
+    </div>
+    <div class="activity-grid">
+
+      <div class="activity-card">
+        <div class="act-num">Activity 01</div>
+        <h3>Document Deep Dive</h3>
+        <p>Small groups of 4–5 analyze a curated packet of four technical documents (e.g., a safety data sheet, a patient discharge summary, an API readme, and a product recall notice). Using a guided worksheet, they identify document type, audience, purpose, and at least three key characteristics per document. Each group presents one document to the class.</p>
+        <p class="obj-link">Supports: Analyze characteristics of common technical documents</p>
+      </div>
+
+      <div class="activity-card">
+        <div class="act-num">Activity 02</div>
+        <h3>Audience Evaluation Scenarios</h3>
+        <p>Working in pairs, students receive a scenario card describing a real-world communication situation (e.g., a software update guide for users with varied digital experience and accessibility needs; a lab safety protocol for new interns). They must identify the audience, evaluate their needs, and recommend an appropriate document type and tone. A second card is then swapped to practice with a new context.</p>
+        <p class="obj-link">Supports: Evaluate audience needs for different communication scenarios</p>
+      </div>
+
+      <div class="activity-card">
+        <div class="act-num">Activity 03</div>
+        <h3>Gallery Walk — Mystery Documents</h3>
+        <p>Five unlabeled technical documents are posted around the room. Students rotate individually or use a seated packet or accessible digital version. For each document, they identify its type, intended audience, and one feature, explaining how that feature helps or hinders the audience. Prompts discussion about disagreements and edge cases, reinforcing that categorization involves judgment, not just recall.</p>
+        <p class="obj-link">Supports: Define and analyze technical documents</p>
+      </div>
+
+      <div class="activity-card">
+        <div class="act-num">Activity 04</div>
+        <h3>Living Example List (Class-Wide)</h3>
+        <p>In the closing debrief, students contribute a real example of technical communication from their own field or personal experience. The instructor captures these on the whiteboard, building a shared class document of diverse, student-generated examples. This validates student knowledge and promotes cross-disciplinary connection.</p>
+        <p class="obj-link">Supports: Relevance, satisfaction, and retention</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 6: ASSESSMENT -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Assessment / Check for Understanding</h2>
+    </div>
+
+    <div class="assess-block">
+      <h3>Formative Assessment 1 — Gallery Walk Annotations</h3>
+      <p>Students' sticky note responses provide the instructor with real-time insight into whether students can correctly identify document types and audiences. Discrepancies between student labels reveal common misconceptions and guide whole-class correction during the debrief.</p>
+    </div>
+
+    <div class="assess-block">
+      <h3>Formative Assessment 2 — Objective-Aligned Exit Task</h3>
+      <p>At the close of class, students respond to three prompts: (1) define technical communication in their own words; (2) explain how one feature of a supplied document supports or limits its purpose; and (3) recommend a format and tone for a short scenario, justified by two audience needs. These responses provide individual evidence for the three objectives. The document worksheet supplies the fuller three-feature analysis. Accept paper or accessible LMS submissions. Students may add an unanswered question for follow-up.</p><p><strong>Feedback criteria:</strong> Look for an accurate definition connecting audience, purpose, and use; a feature explanation grounded in the document; and a recommendation justified by scenario evidence. Mark each criterion as demonstrated, developing, or needs follow-up. Use patterns of difficulty to plan the next lesson.</p>
+    </div>
+
+    <div class="assess-block">
+      <h3>Informal Assessment — Pair Work Observation</h3>
+      <p>During Activity 2 (Audience Evaluation Scenarios), the instructor circulates and listens to pair discussions, providing immediate corrective feedback. This allows early intervention before misconceptions solidify, and helps identify students who need additional support. Ask pairs to explain the evidence behind their decisions rather than infer needs from age or other demographic labels alone.</p>
+    </div>
+  </div>
+
+  <section class="section" aria-labelledby="access-title"><div class="section-header"><h2 class="section-title" id="access-title">Accessible Participation</h2></div><div class="prose"><p>Provide document packets and worksheets in advance as accessible digital text, with readable headings, sufficient contrast, and descriptions for meaningful images. Offer a seated packet or digital worksheet for the gallery walk, with the same prompts and feedback criteria.</p><p>Allow individual thinking time before pair discussion, written contributions as an alternative to speaking, and clear roles within groups. Explain unfamiliar professional terminology and invite students to identify missing audience information rather than make assumptions. If video is added, provide captions and a transcript.</p></div></section>
+<!-- SECTION 7: MATERIALS & RESOURCES -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <h2 class="section-title">Materials &amp; Resources</h2>
+    </div>
+    <ul class="materials-list">
+      <li><span class="mat-icon">📊</span><div><strong>Slide deck</strong> — Lesson slides covering definitions, examples, audience analysis framework, and discussion prompts. Includes document examples with selectable text, useful image descriptions, and source credits. The opening uses two instructor-prepared instruction examples.</div></li>
+      <li><span class="mat-icon">📄</span><div><strong>Document Deep Dive packets</strong> (5 group packets, each containing 4 documents, plus accessible individual copies) — Public instructional examples or fictional samples with no personal information: safety data sheet, patient discharge instructions, open-source README, and a product recall notice.</div></li>
+      <li><span class="mat-icon">📋</span><div><strong>Guided analysis worksheet</strong> — Two-sided handout with structured prompts for Activity 1 and Activity 2, including an audience analysis framework grid.</div></li>
+      <li><span class="mat-icon">🃏</span><div><strong>Audience Evaluation Scenario cards</strong> — Set of 10 laminated cards with realistic communication scenarios spanning healthcare, technology, engineering, and public services.</div></li>
+      <li><span class="mat-icon">📌</span><div><strong>Mystery document posters</strong> — 5 enlarged/printed technical documents posted around the room for the Gallery Walk. Include sticky notes and markers at each station.</div></li>
+      <li><span class="mat-icon">✏️</span><div><strong>Exit ticket cards</strong> — Three-part, objective-aligned response sheets (or accessible LMS form). One per student.</div></li>
+      <li><span class="mat-icon">📚</span><div><strong>Recommended reading</strong> — Markel &amp; Selber, <em>Technical Communication</em>, 13th ed., Ch. 1–2; Johnson-Sheehan, <em>Technical Communication Today</em>, Ch. 1 (audience analysis).</div></li>
+      <li><span class="mat-icon">💻</span><div><strong>Technology</strong> — Projector/display for slides, optional LMS for digital exit ticket submission (Canvas, Blackboard, or Google Forms).</div></li>
+    </ul>
+  </div>
+
+</main><!-- /page -->
+
+<div class="footer">
+  <p>Yingzi (Kathryn) Kong · Preparing Tomorrow's Faculty · Spring 2026</p>
+  <p>Technical Communication · Sample Undergraduate Lesson Plan</p>
+</div>
+
+</body>
+</html>

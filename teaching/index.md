@@ -72,6 +72,19 @@ A worked example, paired coding exercise, and guided debrief invite students to 
 
 *The practice comments are illustrative examples, not a verified research sample. The revised lesson distinguishes classroom interpretation from empirical findings and includes references and AI-assistance acknowledgments.*
 
+### Introduction to Technical Communication — Sample Lesson Plan
+
+Developed for UCF’s Preparing Tomorrow’s Faculty program, this three-hour undergraduate lesson plan introduces technical communication through document analysis, audience evaluation, and collaborative activities. Guided by Keller’s ARCS motivational design model, it connects professional communication scenarios with structured practice and formative feedback.
+
+The plan illustrates my approach to aligning learning objectives, classroom activities, and assessment. It includes accessible participation alternatives, an objective-aligned exit task, and criteria for formative feedback.
+
+**Topics:** Technical communication, audience analysis, document usability.  
+**Teaching approaches:** Small-group analysis, scenario-based practice, accessible gallery walk, formative assessment.
+
+[View the lesson plan]({{ '/assets/teaching/technical-communication-lesson-plan.html' | relative_url }})
+
+*Designed for an intended class of 25 undergraduate students as part of teaching training; presented as a sample instructional design.*
+
 ## Educational Design Projects
 
 My design projects explore how interaction and storytelling can support learning. [Flamingo Journey]({{ '/flamingo-journey/' | relative_url }}) connects conservation decisions with optional English–Spanish practice and provides a case study in AI-assisted game design. My [research on games and language learning]({{ '/research/#games-learning--interactive-media' | relative_url }}) examines learner experiences across VR and desktop environments.
