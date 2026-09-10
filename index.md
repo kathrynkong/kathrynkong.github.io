@@ -119,20 +119,24 @@ title: Home
 <div class="scholarship-list">
 
   <div class="scholarship-item">
-    <h3>Game-Based Learning</h3>
-    <p class="scholarship-meta">Kong, Y. &amp; Johnson, E. K. (2026). "The Future of Language Learning is Fun: Gaming Behaviors and Preferences of L2 Students." <em>Journal of Applied Instructional Design.</em></p>
-    <div class="scholarship-links"><a href="https://doi.org/10.59668/2579.26742" target="_blank" rel="noopener">View publication →</a></div>
+    <h3><a href="https://doi.org/10.59668/2579.26742">The Future of Language Learning is Fun: Gaming Behaviors and Preferences of L2 Students</a></h3>
+    <p class="scholarship-meta">Kong, Y. &amp; Johnson, E. K. · 2026 · <em>Journal of Applied Instructional Design</em></p>
+    <p>Game-based language learning: examining L2 students’ gaming behaviors and preferences to inform educational design.</p>
+    <div class="scholarship-links"><a href="https://doi.org/10.59668/2579.26742">Read journal article →</a></div>
   </div>
 
   <div class="scholarship-item">
-    <h3>Interactive Storytelling &amp; Localization</h3>
-    <p class="scholarship-meta">Kong, Yingzi (2024). "Exploring Game Localization Through Interactive Narratives in Twine." <em>Electronic Literature Organization (ELO) (un)linked 2024 Conference.</em></p>
-    <div class="scholarship-links"><a href="https://stars.library.ucf.edu/elo2024/hypertextsandfictions/schedule/4/" target="_blank" rel="noopener">View conference page →</a></div>
+    <h3><a href="https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/40/">Algorithmic Narrators: Linguistic Boundaries and Institutionalized Cultural Storytelling Across Generative AI Systems</a></h3>
+    <p class="scholarship-meta">Kong, Yingzi · 2026 · <em>Electronic Literature Organization (ELO) (un)supervised</em> · Conference presentation</p>
+    <p>AI and intercultural communication: comparing how generative AI systems shape multilingual interaction and cultural storytelling.</p>
+    <div class="scholarship-links"><a href="https://stars.library.ucf.edu/elo2026/algorithmsandimaginaries/schedule/40/">View presentation and abstract →</a></div>
   </div>
 
   <div class="scholarship-item">
-    <h3>AI &amp; Digital Communication</h3>
-    <p class="scholarship-meta">Hall, A. &amp; Kong, Y. (2025). "Race, Technology, and Trust: Examining the Cheating Discourse Among Black and Asian AI Users." <em>IEEE ProComm 2025.</em></p>
+    <h3><a href="https://doi.org/10.1109/ProComm64814.2025.00052">Race, Technology, and Trust: Examining the Cheating Discourse Among Black and Asian AI Users</a></h3>
+    <p class="scholarship-meta">Hall, A. &amp; Kong, Y. · 2025 · <em>IEEE ProComm</em></p>
+    <p>Critical AI studies: examining race, trust, and discourse about AI use and cheating.</p>
+    <div class="scholarship-links"><a href="https://doi.org/10.1109/ProComm64814.2025.00052">View conference paper →</a></div>
   </div>
 
 </div>
