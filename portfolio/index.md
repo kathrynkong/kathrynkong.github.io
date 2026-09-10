@@ -87,15 +87,7 @@ Mato Anomalies is a narrative-driven RPG blending turn-based combat, dungeon exp
 <img width="468" height="71" alt="image" src="https://github.com/user-attachments/assets/1428c166-1917-48af-9181-77e66f169871" />
 .</span>
 
-**Why It Matters**
-
-Game localization is not word-for-word translation — it's re-authoring narrative voice, humor, and player experience for a new cultural context. Every dialogue choice shapes how players perceive character, tone, and story stakes.
-
 [View Mato Anomalies on Steam →](https://store.steampowered.com/app/2024390/Mato_Anomalies/)
-
-**Soundtrack**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ckAyVrzFkww?si=stJiVGpDbiskWZMO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 </div>
 
@@ -108,14 +100,13 @@ Game localization is not word-for-word translation — it's re-authoring narrati
 ## Game-Based Learning & UX Research
 
 <div class="case-meta">
-<strong>Project:</strong> "ELLE — The EndLess Learner"<br>
-<strong>Led by:</strong> Emily Johnson, Asst. Professor, University of Central Florida<br>
+<strong>Project:</strong> "ELLE — The EndLess LEarner"<br>
+<strong>Led by:</strong> Dr. Emily K. Johnson, Asst. Professor, University of Central Florida<br>
 <strong>Timeline:</strong> Oct. 2023 – present
 </div>
 
-<div class="card-image placeholder">
-  <span class="ph-icon">🖼️</span>
-  <span class="ph-caption">Image coming soon: ELLE / AnimELLE interface screenshot</span>
+<div class="card-image">
+   <img src="{{ '/portfolio/IMG_1445.JPG' | relative_url }}" alt="Me Presenting">
 </div>
 
 Evaluating game-based and immersive language-learning experiences through UX research.
@@ -135,21 +126,6 @@ See the [Research]({{ "/research/" | relative_url }}) page for the academic fram
 <div class="case-study" id="vr-immersive-learning" markdown="1">
 
 <span class="status-badge coming-soon">Content coming soon</span>
-
-## VR & Immersive Learning
-
-<div class="card-image placeholder">
-  <span class="ph-icon">🖼️</span>
-  <span class="ph-caption">Image coming soon: VR/XR project image</span>
-</div>
-
-<span class="fill-me">Describe your VR/XR work here: the platform, the learning context, your role, and outcomes.</span>
-
-</div>
-
-<div class="case-study" id="ai-agentic-game-design" markdown="1">
-
-<span class="status-badge live">In Progress</span>
 
 ## Agentic AI System Design
 {: #ai-agentic-system-design-heading}
