@@ -33,7 +33,7 @@ What I've researched, designed and presented.
 
   <a class="card card--creative cm-card" href="https://kathrynkong.github.io/AI_Portfolio/game/index.html" target="_blank" rel="noopener">
     <div class="card-image">
-      <img src="{{ '/assets/ai-portfolio/cat-game-16x9.png' | relative_url }}" alt="Three pastel-colored doors and three cats from the procedural cat game">
+      <img src="{{ '/assets/ai-portfolio/cat-game-16x9.png' | relative_url }}" alt="Two cats procedural cat game">
     </div>
     <span class="card-tag card-tag--creative">Procedural Game Design &amp; Creative Coding</span>
     <h3>🐱 Cats, Riddles &amp; Procedural Play</h3>
@@ -42,9 +42,8 @@ What I've researched, designed and presented.
   </a>
 
   <a class="card card--ai cm-card" href="{{ '/portfolio/#ai-agentic-game-design' | relative_url }}">
-    <div class="card-image placeholder">
-      <span class="ph-icon">🖼️</span>
-      <span class="ph-caption">Image coming soon</span>
+    <div class="card-image">
+      <img src="{{ '/portfolio/aiagentic.png' | relative_url }}" alt="Project description">
     </div>
     <span class="card-tag card-tag--ai">Dissertation Project - Ongoing</span>
     <h3>🤖 AI Agentic Game Design</h3>
