@@ -7,7 +7,7 @@ title: Home
 
 ## Featured Work
 
-<div class="card-grid">
+<div class="card-grid featured-work-grid">
 
   <a class="card card--immersive cm-card" href="{{ '/flamingo-journey/' | relative_url }}">
     <span class="cm-number">01</span>
@@ -48,6 +48,20 @@ title: Home
     <div class="card-hover-info">
       See how a small state machine turns clicks into shifting dialogue and riddles.
       <span class="view-case-study">Play the game →</span>
+    </div>
+  </a>
+
+  <a class="card card--teaching cm-card" href="{{ '/teaching/#sample-teaching-materials' | relative_url }}">
+    <span class="cm-number">04</span>
+    <div class="card-image">
+      <img src="{{ '/assets/teaching/teaching-card.jpg' | relative_url }}" alt="Illustrated lesson planner, learning cards, and a curious black cat" width="1200" height="675" loading="lazy" decoding="async">
+    </div>
+    <span class="card-tag card-tag--teaching">Teaching &amp; Instructional Design</span>
+    <h3>Sample Teaching Materials</h3>
+    <p>Explore a cat-themed content analysis lesson and a technical communication plan connecting clear objectives with collaborative practice.</p>
+    <div class="card-hover-info">
+      Classroom materials designed for active learning, accessible participation, and formative feedback.
+      <span class="view-case-study">Explore teaching materials →</span>
     </div>
   </a>
 
