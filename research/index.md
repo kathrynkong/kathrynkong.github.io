@@ -32,7 +32,7 @@ My work also examines how people engage with AI beyond the classroom — from af
 - **Human–AI / AI NPC work** — "Feeling for the Artificial: Affective Engagement with Generative AI NPCs in YouTube Audiences — A Case Study of *The Matrix Awakens*." Manuscript submitted to *New Media &amp; Society* (under review).
 - **AI-mediated communication / critical AI literacy** — "Building a Digital Humanities Generative AI Learning Community," led by Dr. Anastasia Salter and Dr. Mel Stanfill, University of Central Florida. Funded by the National Endowment for the Humanities. Summer 2026. A biweekly summer learning community integrating critical AI literacy into the Digital Humanities minor curriculum — contributing to course redesign that incorporates generative AI and machine-learning tools alongside critical discussion of copyright, labor, environmental impact, and ethics.
 - **Social media &amp; cultural AI work** — Hall, A. &amp; Kong, Y. (2025). [Race, Technology, and Trust: Examining the Cheating Discourse Among Black and Asian AI Users](https://doi.org/10.1109/ProComm64814.2025.00052). *IEEE ProComm 2025.*
-- **GenAI-assisted design** — see the dissertation under [Games, Learning &amp; Interactive Media](#games-learning--interactive-media) above, which extends this design-focused thread into game-based language education.
+- **Agentic AI System design** — see the dissertation project.
 
 **Related Publications &amp; Presentations**
 
