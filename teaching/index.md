@@ -57,6 +57,21 @@ In summer 2026, I participated in **Building a Digital Humanities Generative AI 
 
 The biweekly community focused on integrating critical AI literacy into the Digital Humanities minor curriculum. I contributed to course redesign or development involving generative AI, machine-learning tools, and discussions of copyright, labor, environmental impact, and ethics.
 
+## Sample Teaching Materials
+
+### Teaching Content Analysis Through OwlKitty
+
+This sample undergraduate lesson introduces content analysis through cat-centered YouTube parody. Students distinguish manifest and latent content, consider sampling decisions, and apply a two-dimensional codebook to community-building language and anthropomorphization.
+
+A worked example, paired coding exercise, and guided debrief invite students to explain their interpretations, compare decisions, and identify where coding definitions need clarification. The lesson reflects my approach to connecting familiar digital culture with research methods and collaborative inquiry.
+
+**Topics:** Content analysis, digital communities, media interpretation.  
+**Teaching approaches:** Worked examples, paired practice, formative assessment.
+
+[View the sample lesson (PDF)]({{ '/assets/teaching/owlkitty-lesson.pdf' | relative_url }}) · [Download the PowerPoint]({{ '/assets/teaching/owlkitty-lesson.pptx' | relative_url }})
+
+*The practice comments are illustrative examples, not a verified research sample. The revised lesson distinguishes classroom interpretation from empirical findings and includes references and AI-assistance acknowledgments.*
+
 ## Educational Design Projects
 
 My design projects explore how interaction and storytelling can support learning. [Flamingo Journey]({{ '/flamingo-journey/' | relative_url }}) connects conservation decisions with optional English–Spanish practice and provides a case study in AI-assisted game design. My [research on games and language learning]({{ '/research/#games-learning--interactive-media' | relative_url }}) examines learner experiences across VR and desktop environments.
