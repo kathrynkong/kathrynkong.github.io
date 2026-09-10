@@ -157,10 +157,9 @@ See the [Research]({{ "/research/" | relative_url }}) page for the academic fram
 <strong>Status:</strong> Doctoral dissertation (in progress)
 </div>
 
-<div class="card-image placeholder">
-  <span class="ph-icon">🖼️</span>
-  <span class="ph-caption">Image coming soon: agentic workflow diagram</span>
-</div>
+<div class="card-image">
+      <img src="{{ '/portfolio/aiagentic.png' | relative_url }}" alt="Description">
+    </div>
 
 **The Problem**
 
