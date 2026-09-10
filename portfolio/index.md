@@ -78,14 +78,10 @@ Mato Anomalies is a narrative-driven RPG blending turn-based combat, dungeon exp
 
 **My Contribution**
 
-<span class="fill-me">Add 2–3 sentences on your specific localization responsibilities: which content you localized (dialogue, UI, marketing copy), team size, and tools used.</span>
-
-**Localization Challenge**
-
-<span class="fill-me">•	Specialized in translating and localizing gaming content, developing an understanding of UX and service design principles.
-•	Conducted research to inform content adaptation, ensuring cultural relevance and user engagement.
-<img width="468" height="71" alt="image" src="https://github.com/user-attachments/assets/1428c166-1917-48af-9181-77e66f169871" />
-.</span>
+<span class="fill-me">
+• Specialized in translating and localizing gaming content, developing an understanding of UX and service design principles.<br>
+• Conducted research to inform content adaptation, ensuring cultural relevance and user engagement.
+</span>
 
 [View Mato Anomalies on Steam →](https://store.steampowered.com/app/2024390/Mato_Anomalies/)
 
